@@ -1,0 +1,29 @@
+﻿====================================================
+  FOLDER ANGGOTA 10 — CARA MENGISI DATA
+====================================================
+
+LETAKKAN FILE BERIKUT DI FOLDER INI:
+
+1. foto.jpg  (atau foto.png / foto.jpeg)
+   → Foto profil anggota 10
+   → Rekomendasi: rasio portrait (3:4), min 400x530px
+
+2. cv.pdf
+   → File CV ATS anggota 10 dalam format PDF
+
+====================================================
+  LALU ISI DATA DI script.js (anggota ke-10):
+====================================================
+
+  {
+    id:"010", name:"NAMA LENGKAP",  pokemon:"PILIH POKEMON",
+    birth:"DD / MM / YYYY",         origin:"KOTA ASAL",
+    photo:"assets/members/anggota10/foto.jpg",
+    instagram:"https://instagram.com/username",
+    linkedin:"https://linkedin.com/in/username",
+    github:"https://github.com/username",
+    cv:"assets/members/anggota10/cv.pdf"
+  },
+
+Jika link belum ada, biarkan "#"  (tombol akan otomatis redup).
+====================================================

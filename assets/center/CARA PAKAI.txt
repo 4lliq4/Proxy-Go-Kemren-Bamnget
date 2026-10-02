@@ -1,0 +1,13 @@
+CARA PAKAI - THE CENTER
+=======================
+
+Letakkan foto orang (dengan background transparan) di sini.
+Nama file harus: person.png
+
+Cara membuat foto background transparan:
+- Gunakan aplikasi seperti remove.bg, Canva, atau Photoshop
+- Export sebagai PNG (bukan JPG)
+- File: assets/center/person.png
+
+Foto akan tampil di sisi kanan section THE CENTER.
+

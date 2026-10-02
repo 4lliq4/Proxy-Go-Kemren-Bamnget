@@ -1,0 +1,37 @@
+====================================================
+  CARA MENAMBAHKAN FOTO KE BAGIAN MEMORIES
+====================================================
+
+1. LETAKKAN foto kamu di folder ini (assets/memories/)
+   Format yang didukung: .jpg, .jpeg, .png, .webp, .gif
+
+2. BUKA file: script.js (di root project)
+
+3. CARI bagian ini (sekitar baris 34):
+
+   const memoriesPhotos = [
+     "WhatsApp Image 2026-09-17 at 15.46.10.jpeg",
+     // tambahkan foto lainnya di bawah ini:
+     // "foto2.jpg",
+     // "foto3.jpg",
+   ];
+
+4. TAMBAHKAN nama file foto kamu, contoh:
+
+   const memoriesPhotos = [
+     "WhatsApp Image 2026-09-17 at 15.46.10.jpeg",
+     "foto-kelompok.jpg",
+     "momen-games.png",
+     "selfie-bareng.jpeg",
+   ];
+
+5. SIMPAN file script.js, lalu refresh browser kamu.
+
+====================================================
+  CATATAN:
+====================================================
+- Nama file HARUS sama persis (termasuk huruf besar/kecil)
+- Foto akan otomatis dibagi ke dua strip (kanan & kiri)
+- Hover foto untuk melihat versi berwarna
+- Semakin banyak foto = strip makin kaya konten!
+====================================================
