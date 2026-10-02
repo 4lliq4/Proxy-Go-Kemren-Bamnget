@@ -1,1032 +1,250 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Proxy Go — Pekan Ilkomerz</title>
-
-    <!--
-        ============================================================
-        PROXY GO
-        Website Perkenalan Kelompok — Pekan Ilkomerz
-
-        Konsep:
-        Egg → Hatch → Grow → Discover → Memories → Goodbye
-
-        Catatan:
-        Ini merupakan HTML skeleton.
-        Styling, animasi, JavaScript, dan asset dapat dikembangkan
-        oleh anggota kelompok berikutnya.
-        ============================================================
-    -->
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PROXY GO — Pekan Ilkomerz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  <div id="loader" class="loader">
+    <div class="loader-orb"><span></span></div>
+    <p class="loader-small">PEKAN ILKOMERZ // 2026</p>
+    <h1>PROXY GO</h1>
+    <div class="loader-line"><i></i></div>
+    <p class="loader-status">HATCHING MEMORIES...</p>
+  </div>
 
-    <!-- =========================================================
-         01. LOADING SCREEN
-         ========================================================= -->
+  <header class="topbar">
+    <a href="#hero" class="brand">P<span>GO</span></a>
+    <nav>
+      <a href="#about">ABOUT</a>
+      <a href="#members">TRAINERS</a>
+      <a href="#memories">MEMORIES</a>
+    </nav>
+  </header>
 
-    <section id="loading-screen" class="loading-screen">
-
-        <!--
-            Tempat untuk gambar opening / telur / logo Proxy Go
-        -->
-
-        <div class="loading-content">
-
-            <div class="loading-image">
-                <!-- Masukkan gambar opening di sini -->
-                <img src="assets/images/loading-image.png"
-                     alt="Proxy Go">
-            </div>
-
-            <p class="loading-text">
-                Preparing to Go...
-            </p>
-
+  <main>
+    <section id="hero" class="hero" aria-label="Hero">
+      <div class="hero-noise" aria-hidden="true"></div>
+      <div class="hero-content">
+        <div class="hero-tags">
+          <span class="hero-tag">PEKAN ILKOMERZ 2026</span>
+          <span class="hero-tag">GROUP ARCHIVE</span>
+          <span class="hero-tag hero-tag-accent">GO.exe</span>
         </div>
 
+        <h1 class="hero-title">PROXY <span class="hero-title-accent">GO</span></h1>
+
+        <p class="hero-jargon">Go datang. Go menang. Go keren.</p>
+
+        <p class="hero-meta">11 people &nbsp;•&nbsp; 5 days &nbsp;•&nbsp; Countless memories.</p>
+
+        <div class="hero-collage">
+          <!-- Left Supporting Photo -->
+          <div class="hero-photo-slot slot-left">
+            <div class="hero-photo-tape" aria-hidden="true"></div>
+            <div class="hero-photo">
+              <img src="assets/images/group-01.jpg" alt="Proxy Go Memory 01" onerror="this.style.display='none'">
+            </div>
+            <div class="hero-sticker sticker-left">PEKAN ILKOMERZ 2026</div>
+          </div>
+
+          <!-- Main Center Photo (Dominant) -->
+          <div class="hero-photo-slot slot-main">
+            <div class="hero-photo-tape" aria-hidden="true"></div>
+            <div class="hero-photo">
+              <img src="assets/images/group-02.jpg" alt="Proxy Go Main Group" onerror="this.style.display='none'">
+            </div>
+            <div class="hero-sticker sticker-main">GROUP ARCHIVE</div>
+          </div>
+
+          <!-- Right Supporting Photo -->
+          <div class="hero-photo-slot slot-right">
+            <div class="hero-photo-tape" aria-hidden="true"></div>
+            <div class="hero-photo">
+              <img src="assets/images/group-03.jpg" alt="Proxy Go Memory 03" onerror="this.style.display='none'">
+            </div>
+            <div class="hero-sticker sticker-right">GO.exe</div>
+          </div>
+        </div>
+
+        <a href="#about" class="hero-scroll" aria-label="Scroll to explore">
+          <span class="hero-scroll-text">SCROLL TO EXPLORE</span>
+          <span class="hero-scroll-arrow">↓</span>
+        </a>
+      </div>
     </section>
 
-
-    <!-- =========================================================
-         MAIN WEBSITE
-         ========================================================= -->
-
-    <main id="main-content">
-
-
-        <!-- =====================================================
-             02. HERO / HEADER MEMORIES
-             ===================================================== -->
-
-        <section id="hero" class="hero-section">
-
-            <!--
-                Background / slideshow foto kelompok.
-
-                Konsep:
-                - Foto bergerak perlahan
-                - Arah kanan → kiri
-                - Sedikit blur
-                - Desaturated / abu-abu
-                - Bisa dibuat parallax / marquee nantinya
-            -->
-
-            <div class="hero-background">
-
-                <div class="photo-track">
-
-                    <img src="assets/images/group-01.jpg"
-                         alt="Proxy Go Memory 01">
-
-                    <img src="assets/images/group-02.jpg"
-                         alt="Proxy Go Memory 02">
-
-                    <img src="assets/images/group-03.jpg"
-                         alt="Proxy Go Memory 03">
-
-                    <img src="assets/images/group-04.jpg"
-                         alt="Proxy Go Memory 04">
-
-                    <img src="assets/images/group-05.jpg"
-                         alt="Proxy Go Memory 05">
-
-                </div>
-
-            </div>
-
-
-            <!-- Overlay -->
-            <div class="hero-overlay"></div>
-
-
-            <!-- Konten utama hero -->
-            <div class="hero-content">
-
-                <p class="hero-subtitle">
-                    PEKAN ILKOMERZ
-                </p>
-
-                <h1>
-                    PROXY GO
-                </h1>
-
-                <p class="hero-description">
-                    One group.
-                    Eleven stories.
-                    One journey.
-                </p>
-
-                <a href="#about" class="hero-button">
-                    LET'S GO
-                </a>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =====================================================
-             03. ABOUT PROXY
-             ===================================================== -->
-
-        <section id="about" class="about-section">
-
-            <div class="section-label">
-                ABOUT US
-            </div>
-
-            <div class="about-container">
-
-                <div class="about-title">
-
-                    <p class="pixel-label">
-                        THE JOURNEY BEGINS
-                    </p>
-
-                    <h2>
-                        FROM EGG
-                        <br>
-                        TO GO
-                    </h2>
-
-                </div>
-
-
-                <div class="about-text">
-
-                    <p>
-                        Kami datang sebagai sebelas orang
-                        yang awalnya tidak saling mengenal.
-                    </p>
-
-                    <p>
-                        Seperti telur yang belum menetas,
-                        kami belum tahu akan menjadi apa.
-                    </p>
-
-                    <p>
-                        Sampai akhirnya Pekan Ilkomerz
-                        mempertemukan kami.
-                    </p>
-
-                    <p>
-                        Dari sini perjalanan Proxy Go dimulai.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <!-- Timeline sederhana -->
-            <div class="journey">
-
-                <div class="journey-step">
-                    <span>01</span>
-                    <h3>EGG</h3>
-                    <p>We started as strangers.</p>
-                </div>
-
-                <div class="journey-step">
-                    <span>02</span>
-                    <h3>HATCH</h3>
-                    <p>We started knowing each other.</p>
-                </div>
-
-                <div class="journey-step">
-                    <span>03</span>
-                    <h3>GROW</h3>
-                    <p>We discovered our own strengths.</p>
-                </div>
-
-                <div class="journey-step">
-                    <span>04</span>
-                    <h3>GO</h3>
-                    <p>We became Proxy Go.</p>
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =====================================================
-             04. POKEBALL INTERACTION
-             ===================================================== -->
-
-        <section id="discover" class="discover-section">
-
-            <div class="discover-intro">
-
-                <p class="pixel-label">
-                    READY?
-                </p>
-
-                <h2>
-                    DISCOVER
-                    <br>
-                    YOUR TEAM
-                </h2>
-
-                <p>
-                    One Pokéball.
-                    Eleven trainers.
-                    Eleven stories.
-                </p>
-
-            </div>
-
-
-            <!--
-                POKEBALL
-
-                Nanti bisa dikembangkan menjadi:
-                - floating animation
-                - glow
-                - particle
-                - energy pulse
-                - click animation
-                - open animation
-            -->
-
-            <button
-                id="pokeball"
-                class="pokeball"
-                aria-label="Open Proxy Go">
-
-                <div class="pokeball-top"></div>
-
-                <div class="pokeball-middle"></div>
-
-                <div class="pokeball-bottom"></div>
-
-                <div class="pokeball-center">
-                    <span></span>
-                </div>
-
-            </button>
-
-
-            <p class="pokeball-hint">
-                CLICK TO OPEN
-            </p>
-
-        </section>
-
-
-
-        <!-- =====================================================
-             05. MEMBER / TRAINER SECTION
-             ===================================================== -->
-
-        <section id="members" class="members-section">
-
-            <div class="members-header">
-
-                <p class="pixel-label">
-                    TRAINERS
-                </p>
-
-                <h2>
-                    MEET THE TEAM
-                </h2>
-
-                <p>
-                    Every trainer has their own story,
-                    skill and journey.
-                </p>
-
-            </div>
-
-
-            <!--
-                MEMBER GRID
-
-                Total:
-                11 anggota
-
-                Layout bisa dikembangkan menjadi:
-                - zig-zag
-                - Pokémon card grid
-                - 3-3-3-2
-                - horizontal carousel
-                - scattered cards
-            -->
-
-            <div class="members-grid">
-
-
-                <!-- MEMBER 01 -->
-                <article
-                    class="member-card"
-                    data-member="01"
-                    data-pokemon="charmander">
-
-                    <div class="member-card-front">
-
-                        <div class="pokemon-effect">
-                            <!-- Efek Pokémon -->
-                        </div>
-
-                        <div class="member-photo">
-
-                            <img
-                                src="assets/members/member-01.jpg"
-                                alt="Member 01">
-
-                        </div>
-
-                        <div class="member-info">
-
-                            <span class="member-number">
-                                #001
-                            </span>
-
-                            <h3>
-                                NAMA ANGGOTA
-                            </h3>
-
-                            <p>
-                                Origin City
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="member-card-back">
-
-                        <p>
-                            PROFILE
-                        </p>
-
-                        <h3>
-                            NAMA ANGGOTA
-                        </h3>
-
-                        <button class="view-cv">
-                            VIEW CV
-                        </button>
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- MEMBER 02 -->
-                <article
-                    class="member-card"
-                    data-member="02"
-                    data-pokemon="pikachu">
-
-                    <div class="member-card-front">
-
-                        <div class="pokemon-effect"></div>
-
-                        <div class="member-photo">
-
-                            <img
-                                src="assets/members/member-02.jpg"
-                                alt="Member 02">
-
-                        </div>
-
-                        <div class="member-info">
-
-                            <span class="member-number">
-                                #002
-                            </span>
-
-                            <h3>
-                                NAMA ANGGOTA
-                            </h3>
-
-                            <p>
-                                Origin City
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="member-card-back">
-
-                        <p>PROFILE</p>
-
-                        <h3>
-                            NAMA ANGGOTA
-                        </h3>
-
-                        <button class="view-cv">
-                            VIEW CV
-                        </button>
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- MEMBER 03 -->
-                <article
-                    class="member-card"
-                    data-member="03"
-                    data-pokemon="squirtle">
-
-                    <div class="member-card-front">
-
-                        <div class="pokemon-effect"></div>
-
-                        <div class="member-photo">
-
-                            <img
-                                src="assets/members/member-03.jpg"
-                                alt="Member 03">
-
-                        </div>
-
-                        <div class="member-info">
-
-                            <span class="member-number">
-                                #003
-                            </span>
-
-                            <h3>
-                                NAMA ANGGOTA
-                            </h3>
-
-                            <p>
-                                Origin City
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="member-card-back">
-
-                        <p>PROFILE</p>
-
-                        <h3>
-                            NAMA ANGGOTA
-                        </h3>
-
-                        <button class="view-cv">
-                            VIEW CV
-                        </button>
-
-                    </div>
-
-                </article>
-
-
-
-                <!--
-                    =================================================
-                    COPY MEMBER CARD INI SAMPAI MEMBER 11
-                    =================================================
-                -->
-
-                <article
-                    class="member-card"
-                    data-member="04">
-
-                    <div class="member-card-front">
-
-                        <div class="pokemon-effect"></div>
-
-                        <div class="member-photo">
-
-                            <img
-                                src="assets/members/member-04.jpg"
-                                alt="Member 04">
-
-                        </div>
-
-                        <div class="member-info">
-
-                            <span class="member-number">
-                                #004
-                            </span>
-
-                            <h3>
-                                NAMA ANGGOTA
-                            </h3>
-
-                            <p>
-                                Origin City
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-                <article
-                    class="member-card"
-                    data-member="05">
-
-                    <div class="member-card-front">
-
-                        <div class="pokemon-effect"></div>
-
-                        <div class="member-photo">
-
-                            <img
-                                src="assets/members/member-05.jpg"
-                                alt="Member 05">
-
-                        </div>
-
-                        <div class="member-info">
-
-                            <span class="member-number">
-                                #005
-                            </span>
-
-                            <h3>
-                                NAMA ANGGOTA
-                            </h3>
-
-                            <p>
-                                Origin City
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-                <article
-                    class="member-card"
-                    data-member="06">
-
-                    <div class="member-card-front">
-
-                        <div class="pokemon-effect"></div>
-
-                        <div class="member-photo">
-
-                            <img
-                                src="assets/members/member-06.jpg"
-                                alt="Member 06">
-
-                        </div>
-
-                        <div class="member-info">
-
-                            <span class="member-number">
-                                #006
-                            </span>
-
-                            <h3>
-                                NAMA ANGGOTA
-                            </h3>
-
-                            <p>
-                                Origin City
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-                <article
-                    class="member-card"
-                    data-member="07">
-
-                    <div class="member-card-front">
-
-                        <div class="pokemon-effect"></div>
-
-                        <div class="member-photo">
-
-                            <img
-                                src="assets/members/member-07.jpg"
-                                alt="Member 07">
-
-                        </div>
-
-                        <div class="member-info">
-
-                            <span class="member-number">
-                                #007
-                            </span>
-
-                            <h3>
-                                NAMA ANGGOTA
-                            </h3>
-
-                            <p>
-                                Origin City
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-                <article
-                    class="member-card"
-                    data-member="08">
-
-                    <div class="member-card-front">
-
-                        <div class="pokemon-effect"></div>
-
-                        <div class="member-photo">
-
-                            <img
-                                src="assets/members/member-08.jpg"
-                                alt="Member 08">
-
-                        </div>
-
-                        <div class="member-info">
-
-                            <span class="member-number">
-                                #008
-                            </span>
-
-                            <h3>
-                                NAMA ANGGOTA
-                            </h3>
-
-                            <p>
-                                Origin City
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-                <article
-                    class="member-card"
-                    data-member="09">
-
-                    <div class="member-card-front">
-
-                        <div class="pokemon-effect"></div>
-
-                        <div class="member-photo">
-
-                            <img
-                                src="assets/members/member-09.jpg"
-                                alt="Member 09">
-
-                        </div>
-
-                        <div class="member-info">
-
-                            <span class="member-number">
-                                #009
-                            </span>
-
-                            <h3>
-                                NAMA ANGGOTA
-                            </h3>
-
-                            <p>
-                                Origin City
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-                <article
-                    class="member-card"
-                    data-member="10">
-
-                    <div class="member-card-front">
-
-                        <div class="pokemon-effect"></div>
-
-                        <div class="member-photo">
-
-                            <img
-                                src="assets/members/member-10.jpg"
-                                alt="Member 10">
-
-                        </div>
-
-                        <div class="member-info">
-
-                            <span class="member-number">
-                                #010
-                            </span>
-
-                            <h3>
-                                NAMA ANGGOTA
-                            </h3>
-
-                            <p>
-                                Origin City
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-                <article
-                    class="member-card"
-                    data-member="11">
-
-                    <div class="member-card-front">
-
-                        <div class="pokemon-effect"></div>
-
-                        <div class="member-photo">
-
-                            <img
-                                src="assets/members/member-11.jpg"
-                                alt="Member 11">
-
-                        </div>
-
-                        <div class="member-info">
-
-                            <span class="member-number">
-                                #011
-                            </span>
-
-                            <h3>
-                                NAMA ANGGOTA
-                            </h3>
-
-                            <p>
-                                Origin City
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =====================================================
-             06. THE CENTER / PENANGGUNG JAWAB
-             ===================================================== -->
-
-        <section id="the-center" class="center-section">
-
-            <!--
-                BACKGROUND:
-
-                Foto PJ / penanggung jawab kelompok.
-
-                Konsep:
-                - sangat besar
-                - blur
-                - grayscale
-                - bergerak perlahan
-                - menjadi "sosok di balik perjalanan"
-            -->
-
-            <div class="center-background">
-
-                <img
-                    src="assets/images/penanggung-jawab.jpg"
-                    alt="Penanggung Jawab Proxy Go">
-
-            </div>
-
-
-            <div class="center-overlay"></div>
-
-
-            <div class="center-content">
-
-                <p class="pixel-label">
-                    BEHIND THE JOURNEY
-                </p>
-
-                <h2>
-                    THE CENTER
-                </h2>
-
-                <p>
-                    Di balik sebelas perjalanan,
-                    selalu ada satu tempat untuk kembali.
-                </p>
-
-                <p>
-                    Tempat bertanya.
-                    Tempat meminta bantuan.
-                    Tempat menemukan arah.
-                </p>
-
-                <span class="center-name">
-                    NAMA PENANGGUNG JAWAB
-                </span>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =====================================================
-             07. MEMORY / PHOTO GALLERY
-             ===================================================== -->
-
-        <section id="memories" class="memories-section">
-
-            <div class="memories-header">
-
-                <p class="pixel-label">
-                    OUR MEMORIES
-                </p>
-
-                <h2>
-                    THE JOURNEY
-                </h2>
-
-                <p>
-                    Some moments are better remembered
-                    than explained.
-                </p>
-
-            </div>
-
-
-            <!--
-                Foto bergerak berlawanan arah dengan HEADER.
-
-                HEADER:
-                ←
-
-                FOOTER:
-                →
-
-                Bisa dibuat marquee / horizontal scroll.
-            -->
-
-            <div class="memory-track memory-track-top">
-
-                <img src="assets/memories/memory-01.jpg" alt="">
-                <img src="assets/memories/memory-02.jpg" alt="">
-                <img src="assets/memories/memory-03.jpg" alt="">
-                <img src="assets/memories/memory-04.jpg" alt="">
-                <img src="assets/memories/memory-05.jpg" alt="">
-
-            </div>
-
-
-            <div class="memory-track memory-track-bottom">
-
-                <img src="assets/memories/memory-06.jpg" alt="">
-                <img src="assets/memories/memory-07.jpg" alt="">
-                <img src="assets/memories/memory-08.jpg" alt="">
-                <img src="assets/memories/memory-09.jpg" alt="">
-                <img src="assets/memories/memory-10.jpg" alt="">
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =====================================================
-             08. CLOSING
-             ===================================================== -->
-
-        <section id="closing" class="closing-section">
-
-            <div class="closing-content">
-
-                <p class="pixel-label">
-                    END OF JOURNEY
-                </p>
-
-                <h2 class="closing-logo">
-                    PROXY GO
-                </h2>
-
-                <p class="closing-text">
-                    What started as a group
-                    became a collection of stories.
-                </p>
-
-
-                <!-- JARGON -->
-
-                <div class="jargon">
-
-                    <p>
-                        GO DATANG
-                    </p>
-
-                    <p>
-                        GO MENANG
-                    </p>
-
-                    <p>
-                        GO KEREN
-                    </p>
-
-                    <p>
-                        HURAAAA!
-                    </p>
-
-                </div>
-
-
-                <h3 class="final-word">
-                    BHAPPP
-                </h3>
-
-
-                <!-- CONTACT -->
-
-                <div class="contact">
-
-                    <p>
-                        Still want to know us?
-                    </p>
-
-                    <a href="#">
-                        @INSTAGRAM
-                    </a>
-
-                    <a href="mailto:email@example.com">
-                        email@example.com
-                    </a>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =====================================================
-             09. FOOTER
-             ===================================================== -->
-
-        <footer class="footer">
-
-            <p>
-                PROXY GO
-            </p>
-
-            <p>
-                PEKAN ILKOMERZ
-            </p>
-
-            <p>
-                © 2026
-            </p>
-
-        </footer>
-
-
-    </main>
-
-
-
-    <!-- =========================================================
-         JAVASCRIPT
-         ========================================================= -->
-
-    <script src="script.js"></script>
-
+    <section id="about" class="about section">
+      <div class="section-head">
+        <span class="index">01</span>
+        <div>
+          <p class="eyebrow">THE STORY</p>
+          <h2>FROM EGG<br>TO <span>GO.</span></h2>
+        </div>
+      </div>
+      <div class="about-grid">
+        <div class="egg-stage">
+          <div class="egg-glow"></div>
+          <div class="egg">◒</div>
+          <span class="egg-caption">DAY 01 // UNKNOWN</span>
+        </div>
+        <div class="story-copy">
+          <p class="big">Awalnya cuma sebelas orang yang ditempatkan dalam satu kelompok.</p>
+          <p>Kami datang seperti telur—belum tahu akan menetas menjadi apa. Pekan Ilkomerz mempertemukan kami, memaksa
+            kami berkenalan, bekerja sama, tertawa, bingung, dan perlahan menemukan karakter masing-masing.</p>
+          <p>Setiap orang punya skill, cerita, dan cara bergerak yang berbeda. Dan mungkin justru itu yang membuat Proxy
+            Go menjadi Proxy Go.</p>
+          <div class="journey-line">
+            <div><b>01</b><span>EGG</span><small>strangers</small></div>
+            <i></i>
+            <div><b>02</b><span>HATCH</span><small>meet</small></div>
+            <i></i>
+            <div><b>03</b><span>GROW</span><small>discover</small></div>
+            <i></i>
+            <div><b>04</b><span>GO</span><small>remember</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="discover" class="discover">
+      <div class="discover-bg-word">DISCOVER</div>
+
+      <!-- STAGE 1: OPEN THE ARCHIVE (Visible initially) -->
+      <div class="discover-copy" id="discoverCopy">
+        <p class="eyebrow">02 // OPEN THE ARCHIVE</p>
+        <h2>WHO'S<br><span>INSIDE?</span></h2>
+        <p>Tekan Pokéball untuk membuka perjalanan sebelas trainer Proxy Go.</p>
+      </div>
+
+      <!-- POKÉBALL CORE -->
+      <div class="pokeball-stage" id="pokeballStage">
+        <button id="pokeball" class="pokeball" aria-label="Open trainer archive" aria-expanded="false"
+          aria-controls="members">
+          <div class="ball-top"></div>
+          <div class="ball-bottom"></div>
+          <div class="ball-band"></div>
+          <div class="ball-button"></div>
+          <div class="energy e1"></div>
+          <div class="energy e2"></div>
+          <div class="energy e3"></div>
+        </button>
+        <p id="pokeballHint" class="click-hint">CLICK TO OPEN <span>↗</span></p>
+      </div>
+
+      <!-- STAGE 2: MEET THE TEAM (Overlay taking over Open the Archive) -->
+      <div id="members" class="members-overlay" aria-hidden="true">
+        <div class="section-head">
+          <span class="index">02</span>
+          <div>
+            <p class="eyebrow">TRAINER ARCHIVE</p>
+            <h2>MEET THE<br><span>CREW.</span></h2>
+          </div>
+        </div>
+        <div class="members-intro">11 PEOPLE / 11 STORIES / 1 PROXY</div>
+        <div id="memberGrid" class="member-grid"></div>
+        <div class="archive-reset-wrap">
+          <button id="returnPokeballBtn" class="reset-archive-btn" aria-label="Return to Pokéball">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="1 4 1 10 7 10" />
+              <path d="M3.51 15a9 9 0 1 0 .49-3.5" />
+            </svg>
+            <span>RETURN TO POKÉBALL</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="center-section">
+      <div class="center-image"></div>
+      <div class="center-shade"></div>
+      <div class="center-copy">
+        <p class="eyebrow">THE ONE BEHIND THE JOURNEY</p>
+        <h2>THE<br><span>CENTER.</span></h2>
+        <p>Di balik sebelas trainer, ada satu sosok yang menjadi tempat kami kembali. Tempat bertanya, meminta bantuan,
+          dan mencari arah.</p>
+        <div class="center-name">NAMA PENANGGUNG JAWAB</div>
+      </div>
+      <div class="center-stamp">PROXY GO<br>FIELD GUIDE</div>
+    </section>
+
+    <section id="memories" class="memories section">
+      <div class="section-head">
+        <span class="index">04</span>
+        <div>
+          <p class="eyebrow">FIELD NOTES</p>
+          <h2>WE WERE<br><span>HERE.</span></h2>
+        </div>
+      </div>
+      <p class="memory-intro">Bukan semua momen harus dijelaskan. Beberapa cukup disimpan.</p>
+      <div class="memory-strip left" id="memoryLeft"></div>
+      <div class="memory-strip right" id="memoryRight"></div>
+      <div class="memory-caption">PEKAN ILKOMERZ / 2026 / PROXY GO</div>
+    </section>
+
+    <section class="closing">
+      <div class="closing-orb"></div>
+      <div class="closing-inner">
+        <p class="eyebrow">END OF TRANSMISSION</p>
+        <h2>QUEST<br><span>COMPLETE</span></h2>
+        <p class="closing-text">Mungkin setelah ini kami akan berjalan ke arah masing-masing.<br>Tapi cerita ini pernah
+          terjadi. Dan kami pernah menjadi satu.</p>
+        <div class="jargon">
+          <span>GO DATANG</span><span>GO MENANG</span><span>GO KEREN</span><span>HURAAAA!</span>
+        </div>
+        <div class="bhap">BHAPPP</div>
+        <div class="contact">
+          <span>STILL IN CONTACT</span>
+          <a href="#">@PROXYGO</a>
+          <a href="mailto:email@example.com">email@example.com</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-track"><span>PROXY GO</span><span>PROXY GO</span><span>PROXY GO</span><span>PROXY GO</span></div>
+    <div class="footer-bottom"><span>PEKAN ILKOMERZ</span><span>© 2026</span><span>GO DATANG / GO MENANG / GO KEREN /
+        HURAAAA!</span></div>
+  </footer>
+
+  <div id="cvModal" class="modal" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+    <div class="modal-card">
+      <button id="closeModal" class="close">×</button>
+      <div class="modal-top">
+        <div class="modal-photo" id="modalPhoto"></div>
+        <div>
+          <p class="eyebrow">TRAINER PROFILE</p>
+          <h2 id="modalName">NAMA</h2>
+          <p id="modalPokemon">POKÉMON TYPE</p>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div><span>DATE OF BIRTH</span><b id="modalBirth">DD / MM / YYYY</b></div>
+        <div><span>ORIGIN</span><b id="modalOrigin">KOTA</b></div>
+        <div><span>SOCIAL</span><b id="modalSocial">@USERNAME</b></div>
+      </div>
+      <div class="cv-preview">
+        <div class="cv-title">CV ATS / RESUME</div>
+        <div class="cv-lines"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <p>Tempat untuk embed / preview CV ATS anggota.</p>
+        <button class="fake-button">OPEN CV ↗</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
