@@ -6,81 +6,81 @@
 // ============================================================
 const members = [
   {
-    id:"01", name:"NAMA ANGGOTA 01", pokemon:"CHARMANDER",
-    birth:"DD / MM / YYYY", origin:"KOTA ASAL",
-    photo:"assets/members/anggota1/foto.jpg",
-    instagram:"#", linkedin:"#", github:"#",
-    cv:"assets/members/anggota1/CV Ats_Bimo Rajjaz Pahlevi.pdf"
+    id: "01", name: "ABID", pokemon: "CHARMANDER",
+    birth: "28 December 2006", origin: "PEKALONGAN",
+    photo: "assets/members/anggota1/foto1.jpg",
+    instagram: "bidd.01", linkedin: "https://www.linkedin.com/in/abid-rizqi-ananto-putro-3322a4411/", github: "#",
+    cv: "assets/members/anggota1/CV Abid Rizqi Ananto Putro.pdf"
   },
   {
-    id:"02", name:"NAMA ANGGOTA 02", pokemon:"PIKACHU",
-    birth:"DD / MM / YYYY", origin:"KOTA ASAL",
-    photo:"assets/members/anggota2/foto.jpg",
-    instagram:"#", linkedin:"#", github:"#",
-    cv:"assets/members/anggota2/cv.pdf"
+    id: "02", name: "ALLIQA", pokemon: "PIKACHU",
+    birth: "16 July 2007", origin: "SELAYAR",
+    photo: "assets/members/anggota2/foto2.jpg",
+    instagram: "alliqaananta", linkedin: "https://www.linkedin.com/in/alliqa-ananta-amsyir-3606a8380/", github: "https://github.com/4lliq4",
+    cv: "assets/members/anggota2/Curriculum Vitae ATS_Alliqa Ananta Amsyir_M0403251038.pdf"
   },
   {
-    id:"03", name:"NAMA ANGGOTA 03", pokemon:"SQUIRTLE",
-    birth:"DD / MM / YYYY", origin:"KOTA ASAL",
-    photo:"assets/members/anggota3/foto.jpg",
-    instagram:"#", linkedin:"#", github:"#",
-    cv:"assets/members/anggota3/cv.pdf"
+    id: "03", name: "FACHRI", pokemon: "SQUIRTLE",
+    birth: "28 July 2007", origin: "JAKARTA",
+    photo: "assets/members/anggota3/foto3.jpg",
+    instagram: "__fachri.siaeo", linkedin: "https://www.linkedin.com/in/mohammad-fachri-307a05205/", github: "#",
+    cv: "assets/members/anggota3/CV_Mohammad Fachri.pdf"
   },
   {
-    id:"04", name:"NAMA ANGGOTA 04", pokemon:"BULBASAUR",
-    birth:"DD / MM / YYYY", origin:"KOTA ASAL",
-    photo:"assets/members/anggota4/foto.jpg",
-    instagram:"#", linkedin:"#", github:"#",
-    cv:"assets/members/anggota4/cv.pdf"
+    id: "04", name: "ALYA", pokemon: "BULBASAUR",
+    birth: "14 January 2007", origin: "BOGOR",
+    photo: "assets/members/anggota4/foto4.jpg",
+    instagram: "alyanggita_", linkedin: "https://www.linkedin.com/in/alyaanggita/", github: "#",
+    cv: "assets/members/anggota4/CV_Alya Anggita.pdf"
   },
   {
-    id:"05", name:"NAMA ANGGOTA 05", pokemon:"EEVEE",
-    birth:"DD / MM / YYYY", origin:"KOTA ASAL",
-    photo:"assets/members/anggota5/foto.jpg",
-    instagram:"#", linkedin:"#", github:"#",
-    cv:"assets/members/anggota5/cv.pdf"
+    id: "05", name: "MARIA", pokemon: "EEVEE",
+    birth: "14 November 2007", origin: "BEKASI",
+    photo: "assets/members/anggota5/foto5.jpg",
+    instagram: "mariaadvna", linkedin: "https://www.linkedin.com/in/maria-amanda-devina/", github: "github.com/marimoria",
+    cv: "assets/members/anggota5/CV-ATS Maria Amanda Devina.pdf"
   },
   {
-    id:"06", name:"NAMA ANGGOTA 06", pokemon:"LUCARIO",
-    birth:"DD / MM / YYYY", origin:"KOTA ASAL",
-    photo:"assets/members/anggota6/foto.jpg",
-    instagram:"#", linkedin:"#", github:"#",
-    cv:"assets/members/anggota6/cv.pdf"
+    id: "06", name: "DEVINA", pokemon: "LUCARIO",
+    birth: "11 December 2007", origin: "BOGOR",
+    photo: "assets/members/anggota6/foto6.jpg",
+    instagram: "dep_ii0", linkedin: "https://www.linkedin.com/in/devina-alfiyanti-185517418/", github: "#",
+    cv: "assets/members/anggota6/CV_Devina Alfiyanti.pdf"
   },
   {
-    id:"07", name:"NAMA ANGGOTA 07", pokemon:"GENGAR",
-    birth:"DD / MM / YYYY", origin:"KOTA ASAL",
-    photo:"assets/members/anggota7/foto.jpg",
-    instagram:"#", linkedin:"#", github:"#",
-    cv:"assets/members/anggota7/cv.pdf"
+    id: "07", name: "BIMO", pokemon: "GENGAR",
+    birth: "04 November 2006", origin: "BANDUNG",
+    photo: "assets/members/anggota7/foto7.jpg",
+    instagram: "bimo_rajjaz", linkedin: "https://www.linkedin.com/in/bimo-rajjaz-pahlevi-1379b13ab/", github: "https://github.com/Bimo-RP",
+    cv: "assets/members/anggota7/CV Ats_Bimo Rajjaz Pahlevi.pdf"
   },
   {
-    id:"08", name:"NAMA ANGGOTA 08", pokemon:"CHARIZARD",
-    birth:"DD / MM / YYYY", origin:"KOTA ASAL",
-    photo:"assets/members/anggota8/foto.jpg",
-    instagram:"#", linkedin:"#", github:"#",
-    cv:"assets/members/anggota8/cv.pdf"
+    id: "08", name: "EMIR", pokemon: "CHARIZARD",
+    birth: "01 March 2007", origin: "BOGOR",
+    photo: "assets/members/anggota8/foto8.jpg",
+    instagram: "emirsyah_aa", linkedin: "https://linkedin.com/in/emirsyahahmad", github: "https://github.com/YM1Rfr",
+    cv: "assets/members/anggota8/CV_Emirsyah Ahmad Akmal.pdf"
   },
   {
-    id:"09", name:"NAMA ANGGOTA 09", pokemon:"VAPOREON",
-    birth:"DD / MM / YYYY", origin:"KOTA ASAL",
-    photo:"assets/members/anggota9/foto.jpg",
-    instagram:"#", linkedin:"#", github:"#",
-    cv:"assets/members/anggota9/cv.pdf"
+    id: "09", name: "RABANI", pokemon: "VAPOREON",
+    birth: "27 August 2006", origin: "JAKARTA",
+    photo: "assets/members/anggota9/foto9.jpg",
+    instagram: "mrbani.w", linkedin: "https://www.linkedin.com/in/muhammad-rabani-wicaksono-5b8044421/", github: "#",
+    cv: "assets/members/anggota9/CV_Muhammad Rabani Wicaksono.pdf"
   },
   {
-    id:"10", name:"NAMA ANGGOTA 10", pokemon:"JOLTEON",
-    birth:"DD / MM / YYYY", origin:"KOTA ASAL",
-    photo:"assets/members/anggota10/foto.jpg",
-    instagram:"#", linkedin:"#", github:"#",
-    cv:"assets/members/anggota10/cv.pdf"
+    id: "10", name: "NASYWA", pokemon: "JOLTEON",
+    birth: "06 March 2007", origin: "BOGOR",
+    photo: "assets/members/anggota10/foto10.jpg",
+    instagram: "aidhnsywa", linkedin: "https://www.linkedin.com/in/aidahnasywaazzahra/", github: "#",
+    cv: "assets/members/anggota10/CV_Aidah Nasywa Azzahra.pdf"
   },
   {
-    id:"11", name:"NAMA ANGGOTA 11", pokemon:"MEOWTH",
-    birth:"DD / MM / YYYY", origin:"KOTA ASAL",
-    photo:"assets/members/anggota11/foto.jpg",
-    instagram:"#", linkedin:"#", github:"#",
-    cv:"assets/members/anggota11/cv.pdf"
+    id: "11", name: "SAKYA", pokemon: "MEOWTH",
+    birth: "12 May 2007", origin: "CILACAP",
+    photo: "assets/members/anggota11/foto11.jpg",
+    instagram: "skya_qq2", linkedin: "https://www.linkedin.com/in/sakya-qonita/", github: "#",
+    cv: "assets/members/anggota11/CV_Sakya Qonita Qurrotu'ain.pdf"
   },
 ];
 // ============================================================
@@ -96,167 +96,320 @@ const lineupGrid = document.getElementById("teamLineupGrid");
 members.forEach((m, i) => {
   const card = document.createElement("div");
   card.className = "team-card";
-  card.style.opacity = "0"; // tersembunyi dulu, akan dianimasikan
+  card.style.opacity = "0"; // tersembunyi dulu, akan dianimasikan saat archive dibuka
 
   card.innerHTML = `
     <div class="tc-photo" id="tc-bg-${i}">
-      <div class="tc-fallback">#${m.id}</div>
+      <div class="tc-fallback"></div>
       <div class="tc-shade"></div>
       <div class="tc-badge">
-        <span class="card-no">#${m.id}</span>
         <span class="tc-poke">${m.pokemon}</span>
       </div>
     </div>
     <div class="tc-info">
       <h3>${m.name}</h3>
       <p>${m.origin}</p>
-    </div>
-    <div class="tc-links">
-      <a href="${hasLink(m.instagram) ? m.instagram : "#"}"
-         target="_blank" rel="noopener"
-         class="tl tl-ig${hasLink(m.instagram) ? "" : " tl-off"}"
-         ${hasLink(m.instagram) ? "" : 'tabindex="-1"'}>IG</a>
-      <a href="${hasLink(m.linkedin) ? m.linkedin : "#"}"
-         target="_blank" rel="noopener"
-         class="tl tl-li${hasLink(m.linkedin) ? "" : " tl-off"}"
-         ${hasLink(m.linkedin) ? "" : 'tabindex="-1"'}>LI</a>
-      <a href="${hasLink(m.github) ? m.github : "#"}"
-         target="_blank" rel="noopener"
-         class="tl tl-gh${hasLink(m.github) ? "" : " tl-off"}"
-         ${hasLink(m.github) ? "" : 'tabindex="-1"'}>GH</a>
-      <a href="${hasLink(m.cv) ? m.cv : "#"}"
-         target="_blank" rel="noopener"
-         class="tl tl-cv${hasLink(m.cv) ? "" : " tl-off"}"
-         ${hasLink(m.cv) ? "" : 'tabindex="-1"'}>CV↗</a>
     </div>`;
 
   // Pasang foto sebagai background, fallback ke gradient
   const bg = card.querySelector(`#tc-bg-${i}`);
   const img = new Image();
-  img.onload  = () => { bg.style.backgroundImage = `url('${m.photo}')`; };
+  img.onload = () => { bg.style.backgroundImage = `url('${m.photo}')`; };
   img.onerror = () => { bg.style.backgroundImage = "linear-gradient(135deg,#1f2d3d,#6c7480)"; };
   img.src = m.photo;
 
-  // Klik foto → buka profile modal detail
-  bg.addEventListener("click", () => openProfile(i));
+  // Klik card → buka profile modal detail
+  card.addEventListener("click", () => openProfile(i));
 
   lineupGrid.appendChild(card);
 });
 
-// ─── POKEBALL WHO'S INSIDE — satu kali, kartu keluar inline ──
-const discoverBall  = document.getElementById("pokeball");
-const clickHint     = document.getElementById("clickHint");
-const teamLineup    = document.getElementById("teamLineup");
-const discoverCopy  = document.getElementById("discoverCopy");
+// ─── POKÉBALL ARCHIVE INTERACTION (2-STATE DISCOVER) ────────
+const discoverSection = document.getElementById("discover");
+const discoverBall = document.getElementById("pokeball");
+const clickHint = document.getElementById("clickHint");
+const teamLineup = document.getElementById("teamLineup");
+const discoverCopy = document.getElementById("discoverCopy");
+const resetBtn = document.getElementById("resetPokeball") || document.getElementById("closeArchive");
 
-discoverBall.addEventListener("click", function handlePokeball() {
-  discoverBall.removeEventListener("click", handlePokeball); // satu kali saja
-  discoverBall.style.cursor = "default";
-  discoverBall.style.pointerEvents = "none";
+let archiveState = "initial"; // "initial" | "opening" | "team" | "closing"
+let ballCX = 0;
+let ballCY = 0;
 
-  // Simpan posisi tengah pokeball sebelum dianimasikan
+function handlePokeballClick() {
+  if (archiveState !== "initial") return;
+  archiveState = "opening";
+
+  // Catat titik tengah Pokéball relatif terhadap section #discover
   const ballRect = discoverBall.getBoundingClientRect();
-  const sectionRect = document.getElementById("discover").getBoundingClientRect();
-  const ballCX = ballRect.left + ballRect.width  / 2 - sectionRect.left;
-  const ballCY = ballRect.top  + ballRect.height / 2 - sectionRect.top;
+  const sectionRect = discoverSection.getBoundingClientRect();
+  ballCX = ballRect.left + ballRect.width / 2 - sectionRect.left;
+  ballCY = ballRect.top + ballRect.height / 2 - sectionRect.top;
 
-  // ── Fase 1: getaran (0-680ms)
+  // Matikan pointer event agar tidak ada double click atau hover
+  discoverBall.style.pointerEvents = "none";
+  discoverBall.style.cursor = "default";
+
+  const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (prefersReduced) {
+    onOpeningComplete();
+    return;
+  }
+
+  // Masuk ke fase opening (fade out teks & hint)
+  discoverSection.classList.add("is-opening");
+
+  // Fase 1: Pokéball bergetar cepat & kuat (poke-shake)
   discoverBall.classList.add("poke-shake");
 
-  setTimeout(() => {
+  function onShakeEnd(e) {
+    if (e.target !== discoverBall || e.animationName !== "pokeShake") return;
+    discoverBall.removeEventListener("animationend", onShakeEnd);
     discoverBall.classList.remove("poke-shake");
 
-    // ── Fase 2: pokeball terbuka + flash (680ms)
-    discoverBall.classList.add("poke-open");
+    // Fase 2: Pokéball membuka (poke-open)
+    startBallOpening();
+  }
+  discoverBall.addEventListener("animationend", onShakeEnd);
+}
 
-    const flash = document.createElement("div");
-    flash.className = "poke-flash";
-    document.body.appendChild(flash);
-    setTimeout(() => flash.remove(), 700);
+function startBallOpening() {
+  discoverBall.classList.add("poke-open");
 
-    // Fade out teks & hint
-    [discoverCopy, clickHint].forEach(el => {
-      if (el) { el.style.transition = "opacity .3s"; el.style.opacity = "0"; }
-    });
+  // Efek cahaya radial flash
+  const flash = document.createElement("div");
+  flash.className = "poke-flash";
+  document.body.appendChild(flash);
+  flash.addEventListener("animationend", () => flash.remove(), { once: true });
 
-    // ── Fase 3: tunjukkan lineup grid (tapi header belum muncul)
+  // Sinkronisasi via animationend pada ball-top
+  const ballTop = discoverBall.querySelector(".ball-top");
+  function onOpenEnd(e) {
+    if (e.animationName !== "ballTopOpen") return;
+    ballTop.removeEventListener("animationend", onOpenEnd);
+
+    // Fase 3: Pokéball selesai membuka → ganti state ke Meet the Team
+    onOpeningComplete();
+  }
+  ballTop.addEventListener("animationend", onOpenEnd);
+}
+
+function onOpeningComplete() {
+  // Transisi State: WHO'S INSIDE? → MEET THE TEAM
+  discoverSection.classList.remove("is-opening");
+  discoverSection.classList.add("is-team");
+
+  // Arahkan viewport user langsung ke awal tampilan Meet the Team
+  if (teamLineup) {
+    teamLineup.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
+  revealMemberCards();
+}
+
+function revealMemberCards() {
+  const cards = lineupGrid.querySelectorAll(".team-card");
+  const sRect = discoverSection.getBoundingClientRect();
+
+  cards.forEach((card, idx) => {
+    const cardRect = card.getBoundingClientRect();
+    const cardCX = cardRect.left + cardRect.width / 2 - sRect.left;
+    const cardCY = cardRect.top + cardRect.height / 2 - sRect.top;
+
+    const fromX = ballCX - cardCX;
+    const fromY = ballCY - cardCY;
+
+    card.style.setProperty("--from-x", `${fromX}px`);
+    card.style.setProperty("--from-y", `${fromY}px`);
+
+    // Stagger kemunculan kartu satu per satu dari posisi Pokéball
     setTimeout(() => {
-      teamLineup.classList.add("show-grid");
+      card.style.opacity = "1";
+      card.classList.add("card-revealed");
+    }, idx * 55);
+  });
 
-      // ── Fase 4: kartu keluar satu per satu dari posisi pokeball
-      const cards = lineupGrid.querySelectorAll(".team-card");
-      cards.forEach((card, idx) => {
-        // Hitung offset dari pokeball ke posisi kartu di grid
-        const cardRect  = card.getBoundingClientRect();
-        const sRect     = document.getElementById("discover").getBoundingClientRect();
-        const cardCX    = cardRect.left + cardRect.width  / 2 - sRect.left;
-        const cardCY    = cardRect.top  + cardRect.height / 2 - sRect.top;
+  const totalCardTime = (cards.length - 1) * 55 + 550;
+  setTimeout(() => {
+    archiveState = "team";
+  }, totalCardTime);
+}
 
-        const fromX = ballCX - cardCX;
-        const fromY = ballCY - cardCY;
+// ─── POKÉBALL VISUAL RESET HELPER ───────────────────────────
+function resetPokeballVisual() {
+  discoverBall.classList.remove("poke-open", "poke-shake", "poke-reveal");
 
-        card.style.setProperty("--from-x", `${fromX}px`);
-        card.style.setProperty("--from-y", `${fromY}px`);
+  discoverBall.style.animation = "";
+  discoverBall.style.transition = "";
+  discoverBall.style.opacity = "";
+  discoverBall.style.transform = "";
+  discoverBall.style.filter = "";
 
-        setTimeout(() => {
-          card.style.opacity   = "1";
-          card.style.animation = `cardFlyOut .55s cubic-bezier(.22,.68,0,1.2) forwards`;
-        }, idx * 70);
-      });
+  const top = discoverBall.querySelector(".ball-top");
+  const bottom = discoverBall.querySelector(".ball-bottom");
+  const band = discoverBall.querySelector(".ball-band");
+  const button = discoverBall.querySelector(".ball-button");
 
-      // ── Fase 5: pokeball fade out setelah kartu terakhir keluar
-      const totalDelay = members.length * 70 + 400;
-      setTimeout(() => {
-        discoverBall.style.transition = "opacity .5s, transform .5s";
-        discoverBall.style.opacity   = "0";
-        discoverBall.style.transform = "scale(0.4)";
-        discoverBall.style.pointerEvents = "none";
+  [top, bottom, band, button].forEach((el) => {
+    if (!el) return;
 
-        // ── Fase 6: header MEET THE TEAM muncul
-        setTimeout(() => {
-          discoverBall.style.display = "none";
-          if (clickHint) clickHint.style.display = "none";
-          if (discoverCopy) discoverCopy.style.display = "none";
-          teamLineup.classList.add("show-header");
-        }, 500);
+    el.style.animation = "";
+    el.style.transition = "";
+    el.style.transform = "";
+    el.style.opacity = "";
+  });
 
-      }, totalDelay);
+  discoverBall.querySelectorAll(".ambient-particle").forEach((el) => {
+    el.style.animation = "";
+    el.style.opacity = "";
+    el.style.transform = "";
+  });
+}
 
-    }, 520);
+// ─── CLOSE / RESET → KEMBALI KE WHO'S INSIDE? ───────────────
+function closeArchive() {
+  if (archiveState !== "team") return;
+  archiveState = "closing";
 
-  }, 680);
+  // 1. Stop any active animation
+  discoverBall.classList.remove("poke-open", "poke-shake", "poke-reveal");
+
+  // 2. Reset Pokéball internals to CLOSED state immediately
+  resetPokeballVisual();
+
+  // 3. Reset team cards
+  const cards = lineupGrid.querySelectorAll(".team-card");
+  cards.forEach((card) => {
+    card.classList.remove("card-revealed");
+    card.style.opacity = "0";
+    card.style.animation = "";
+    card.style.transform = "";
+    card.style.removeProperty("--from-x");
+    card.style.removeProperty("--from-y");
+  });
+
+  // Scroll viewport kembali ke awal section #discover
+  discoverSection.scrollIntoView({ behavior: "smooth", block: "start" });
+
+  // 4. Hide Team state
+  discoverSection.classList.remove("is-team", "is-opening", "is-closing");
+
+  // 5. Restore Who's Inside state
+  if (discoverCopy) {
+    discoverCopy.style.display = "";
+    discoverCopy.style.opacity = "1";
+    discoverCopy.style.transform = "";
+  }
+  if (clickHint) {
+    clickHint.style.display = "";
+    clickHint.style.opacity = "1";
+    clickHint.style.transform = "";
+  }
+
+  // 6. Restore Pokéball
+  discoverBall.style.display = "";
+  discoverBall.style.pointerEvents = "";
+  discoverBall.style.cursor = "";
+
+  // 7. Make sure it is CLOSED before revealing it
+  resetPokeballVisual();
+
+  const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (prefersReduced) {
+    archiveState = "initial";
+    return;
+  }
+
+  // 8. Reveal the CLOSED Pokéball
+  void discoverBall.offsetWidth;
+  discoverBall.classList.add("poke-reveal");
+
+  // 9. Restore click handler / state when reveal completes
+  function onRevealEnd(e) {
+    if (e && e.target !== discoverBall) return;
+    discoverBall.removeEventListener("animationend", onRevealEnd);
+    discoverBall.classList.remove("poke-reveal");
+    archiveState = "initial";
+  }
+
+  discoverBall.addEventListener("animationend", onRevealEnd, { once: true });
+  setTimeout(() => {
+    discoverBall.removeEventListener("animationend", onRevealEnd);
+    discoverBall.classList.remove("poke-reveal");
+    archiveState = "initial";
+  }, 500);
+}
+
+if (discoverBall) {
+  resetPokeballVisual();
+  discoverBall.addEventListener("click", handlePokeballClick);
+}
+
+document.querySelectorAll(".close-archive, #resetPokeball, #closeArchive").forEach((btn) => {
+  btn.addEventListener("click", closeArchive);
 });
 
 // ─── PROFILE MODAL ──────────────────────────────────────────
 
 const profileModal = document.getElementById("profileModal");
 
+function formatInstagram(raw) {
+  if (!raw || raw === "#") return null;
+  let handle = raw.trim();
+  handle = handle.replace(/^https?:\/\/(www\.)?instagram\.com\/?/, "");
+  handle = handle.replace(/\/.*$/, "");
+  handle = handle.replace(/^@/, "");
+  if (!handle) return null;
+  return {
+    handle: `@${handle}`,
+    url: `https://instagram.com/${handle}`
+  };
+}
+
 function openProfile(i) {
   const m = members[i];
 
   // Foto di modal
   const ph = document.getElementById("modalPhoto");
-  ph.style.backgroundImage    = "";
-  ph.style.backgroundSize     = "cover";
+  ph.style.backgroundImage = "";
+  ph.style.backgroundSize = "cover";
   ph.style.backgroundPosition = "center";
   const img = new Image();
-  img.onload  = () => { ph.style.backgroundImage = `url('${m.photo}')`; };
+  img.onload = () => { ph.style.backgroundImage = `url('${m.photo}')`; };
   img.onerror = () => { ph.style.backgroundImage = "linear-gradient(135deg,#252f3d,#777f8a)"; };
   img.src = m.photo;
 
   // Teks
-  document.getElementById("modalName").textContent    = m.name;
+  document.getElementById("modalName").textContent = m.name;
   document.getElementById("modalPokemon").textContent = m.pokemon;
-  document.getElementById("modalBirth").textContent   = m.birth;
-  document.getElementById("modalOrigin").textContent  = m.origin;
-  document.getElementById("modalSocial").textContent  =
-    hasLink(m.instagram) ? m.instagram.replace(/https?:\/\/(www\.)?instagram\.com\//,"@") : "—";
+  document.getElementById("modalBirth").textContent = m.birth || m.dob || "—";
+  document.getElementById("modalOrigin").textContent = m.origin;
+
+  // Instagram username sebagai clickable link di member info
+  const igEl = document.getElementById("modalSocial");
+  if (igEl) {
+    const igData = formatInstagram(m.instagram);
+    if (igData) {
+      igEl.textContent = igData.handle;
+      igEl.href = igData.url;
+      igEl.target = "_blank";
+      igEl.rel = "noopener noreferrer";
+      igEl.style.pointerEvents = "auto";
+      igEl.style.opacity = "1";
+      igEl.style.cursor = "pointer";
+    } else {
+      igEl.textContent = "—";
+      igEl.removeAttribute("href");
+      igEl.style.pointerEvents = "none";
+      igEl.style.opacity = "0.45";
+      igEl.style.cursor = "default";
+    }
+  }
 
   // Tombol sosial & CV
-  setLink("modalInstagram", m.instagram);
-  setLink("modalLinkedin",  m.linkedin);
-  setLink("modalGithub",    m.github);
-  setLink("modalCv",        m.cv);
+  setLink("modalLinkedin", m.linkedin);
+  setLink("modalGithub", m.github);
+  setLink("modalCv", m.cv);
 
   profileModal.classList.add("open");
   profileModal.setAttribute("aria-hidden", "false");
@@ -266,10 +419,10 @@ function openProfile(i) {
 function setLink(id, href) {
   const el = document.getElementById(id);
   const isEmpty = !hasLink(href);
-  el.href              = isEmpty ? "#" : href;
-  el.style.opacity     = isEmpty ? "0.28" : "1";
+  el.href = isEmpty ? "#" : href;
+  el.style.opacity = isEmpty ? "0.28" : "1";
   el.style.pointerEvents = isEmpty ? "none" : "auto";
-  el.style.cursor      = isEmpty ? "default" : "pointer";
+  el.style.cursor = isEmpty ? "default" : "pointer";
 }
 
 function closeProfileModal() {
@@ -277,7 +430,7 @@ function closeProfileModal() {
   profileModal.setAttribute("aria-hidden", "true");
   document.body.style.overflow = "";
 }
-document.getElementById("closeModal").onclick         = closeProfileModal;
+document.getElementById("closeModal").onclick = closeProfileModal;
 profileModal.querySelector(".modal-backdrop").onclick = closeProfileModal;
 document.addEventListener("keydown", e => {
   if (e.key === "Escape") closeProfileModal();
@@ -310,18 +463,18 @@ const memoriesPhotos = [
 ];
 // ============================================================
 
-const memLeft  = document.getElementById("memoryLeft");
+const memLeft = document.getElementById("memoryLeft");
 const memRight = document.getElementById("memoryRight");
 
 function buildMemoryStrip(container, photos) {
   const doubled = [...photos, ...photos];
   doubled.forEach((filename, idx) => {
     const el = document.createElement("img");
-    el.src   = `assets/memories/${filename}`;
-    el.alt   = `Memory ${idx + 1}`;
+    el.src = `assets/memories/${filename}`;
+    el.alt = `Memory ${idx + 1}`;
     el.className = "memory-img";
     el.loading = "lazy";
-    el.onerror = function() {
+    el.onerror = function () {
       const ph = document.createElement("div");
       ph.className = "memory-placeholder";
       ph.textContent = `MEMORY ${String(idx + 1).padStart(2, "0")}`;
@@ -345,12 +498,12 @@ if (memoriesPhotos.length === 0) {
     memRight.appendChild(el);
   }
 } else {
-  const mid   = Math.ceil(memoriesPhotos.length / 2);
-  const left  = memoriesPhotos.slice(0, mid);
+  const mid = Math.ceil(memoriesPhotos.length / 2);
+  const left = memoriesPhotos.slice(0, mid);
   const right = memoriesPhotos.slice(mid).length > 0
-                  ? memoriesPhotos.slice(mid)
-                  : memoriesPhotos.slice().reverse();
-  buildMemoryStrip(memLeft,  left);
+    ? memoriesPhotos.slice(mid)
+    : memoriesPhotos.slice().reverse();
+  buildMemoryStrip(memLeft, left);
   buildMemoryStrip(memRight, right);
 }
 
