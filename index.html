@@ -1,202 +1,434 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PROXY GO — Pekan Ilkomerz</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PROXY GO — Pekan Ilkomerz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-<div id="loader" class="loader">
-  <div class="loader-orb"><span></span></div>
-  <p class="loader-small">PEKAN ILKOMERZ // 2026</p>
-  <h1>PROXY GO</h1>
-  <div class="loader-line"><i></i></div>
-  <p class="loader-status">HATCHING MEMORIES...</p>
-</div>
-
-<header class="topbar">
-  <a href="#hero" class="brand">P<span>GO</span></a>
-  <nav>
-    <a href="#about">ABOUT</a>
-    <a href="#discover">TRAINERS</a>
-    <a href="#memories">MEMORIES</a>
-  </nav>
-</header>
-
-<main>
-
-<!-- ── 1. HERO ── -->
-<section id="hero" class="hero">
-  <div class="marquee marquee-a">
-    <div class="marquee-track">
-      <span>PROXY GO</span><span>PEKAN ILKOMERZ</span><span>ONE GROUP</span><span>ELEVEN STORIES</span>
-      <span>PROXY GO</span><span>PEKAN ILKOMERZ</span><span>ONE GROUP</span><span>ELEVEN STORIES</span>
-    </div>
+  <div id="loader" class="loader">
+    <div class="loader-orb"><span></span></div>
+    <p class="loader-small">PEKAN ILKOMERZ // 2026</p>
+    <h1>PROXY GO</h1>
+    <div class="loader-line"><i></i></div>
+    <p class="loader-status">HATCHING MEMORIES...</p>
   </div>
-  <div class="hero-noise"></div>
-  <div class="hero-content">
-    <p class="eyebrow">AN ARCHIVE OF ELEVEN TRAINERS</p>
-    <h1>PROXY<br><em>GO</em></h1>
-    <p class="hero-copy">Dari sebelas orang yang awalnya asing,<br>menjadi satu perjalanan yang akan selalu diingat.</p>
-    <a href="#about" class="cta">START JOURNEY <span>↓</span></a>
-  </div>
-  <div class="hero-coordinates">06°33' // 106°43' &nbsp; • &nbsp; IPB UNIVERSITY</div>
-  <div class="scroll-note">SCROLL TO DISCOVER <span>↓</span></div>
-</section>
 
-<!-- ── 2. ABOUT — FROM EGG TO GO ── -->
-<section id="about" class="about section">
-  <div class="section-head">
-    <span class="index">01</span>
-    <div><p class="eyebrow">THE STORY</p><h2>FROM EGG<br>TO <span>GO.</span></h2></div>
-  </div>
-  <div class="about-grid">
-    <div class="egg-stage">
-      <div class="egg-glow"></div>
-      <div class="egg">◒</div>
-      <span class="egg-caption">DAY 01 // UNKNOWN</span>
-    </div>
-    <div class="story-copy">
-      <p class="big">Awalnya cuma sebelas orang yang ditempatkan dalam satu kelompok.</p>
-      <p>Kami datang seperti telur—belum tahu akan menetas menjadi apa. Pekan Ilkomerz mempertemukan kami, memaksa kami berkenalan, bekerja sama, tertawa, bingung, dan perlahan menemukan karakter masing-masing.</p>
-      <p>Setiap orang punya skill, cerita, dan cara bergerak yang berbeda. Dan mungkin justru itu yang membuat Proxy Go menjadi Proxy yang solid</p>
-      <div class="journey-line">
-        <div><b>01</b><span>EGG</span><small>strangers</small></div>
-        <i></i>
-        <div><b>02</b><span>HATCH</span><small>meet</small></div>
-        <i></i>
-        <div><b>03</b><span>GROW</span><small>discover</small></div>
-        <i></i>
-        <div><b>04</b><span>GO</span><small>remember</small></div>
+  <header class="topbar">
+    <a href="#hero" class="brand">P<span>GO</span></a>
+    <nav>
+      <a href="#about">ABOUT</a>
+      <a href="#discover">TRAINERS</a>
+      <a href="#memories">MEMORIES</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ── 1. HERO ── -->
+    <section id="hero" class="hero" aria-label="Hero">
+      <div class="hero-noise" aria-hidden="true"></div>
+      <div class="hero-content">
+        <div class="hero-tags">
+          <span class="hero-tag">PEKAN ILKOMERZ 2026</span>
+          <span class="hero-tag">GROUP ARCHIVE</span>
+          <span class="hero-tag hero-tag-accent">GO.exe</span>
+        </div>
+
+        <h1 class="hero-title">PROXY <span class="hero-title-accent">GO</span></h1>
+
+        <p class="hero-jargon">Go datang. Go menang. Go keren.</p>
+
+        <p class="hero-meta">11 people &nbsp;•&nbsp; 5 days &nbsp;•&nbsp; Countless memories.</p>
+
+        <div class="hero-collage">
+          <!-- Left Supporting Photo -->
+          <div class="hero-photo-slot slot-left">
+            <div class="hero-photo-tape" aria-hidden="true"></div>
+            <div class="hero-photo">
+              <img src="assets/images/group-01.jpg" alt="Proxy Go Memory 01" onerror="this.style.display='none'">
+            </div>
+            <div class="hero-sticker sticker-left">PEKAN ILKOMERZ 2026</div>
+          </div>
+
+          <!-- Main Center Photo (Dominant) -->
+          <div class="hero-photo-slot slot-main">
+            <div class="hero-photo-tape" aria-hidden="true"></div>
+            <div class="hero-photo">
+              <img src="assets/images/group-02.jpg" alt="Proxy Go Main Group" onerror="this.style.display='none'">
+            </div>
+            <div class="hero-sticker sticker-main">GROUP ARCHIVE</div>
+          </div>
+
+          <!-- Right Supporting Photo -->
+          <div class="hero-photo-slot slot-right">
+            <div class="hero-photo-tape" aria-hidden="true"></div>
+            <div class="hero-photo">
+              <img src="assets/images/group-03.jpg" alt="Proxy Go Memory 03" onerror="this.style.display='none'">
+            </div>
+            <div class="hero-sticker sticker-right">GO.exe</div>
+          </div>
+        </div>
+
+        <a href="#about" class="hero-scroll" aria-label="Scroll to explore">
+          <span class="hero-scroll-text">SCROLL TO EXPLORE</span>
+          <span class="hero-scroll-arrow">↓</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ── 2. ABOUT — FROM EGG TO GO ── -->
+    <section id="about" class="about section">
+      <div class="about-bg-grid" aria-hidden="true"></div>
+
+      <!-- Section Header -->
+      <div class="section-head">
+        <span class="index">01</span>
+        <div>
+          <p class="eyebrow">01 // THE BEGINNING</p>
+          <h2>FROM EGG<br>TO <span>GO.</span></h2>
+        </div>
+      </div>
+
+      <!-- Progression Screen / Visual Journey -->
+      <div class="progression-screen">
+
+        <!-- Horizontal 4-Stage Progression Track -->
+        <div class="journey-track">
+          <div class="journey-rail" aria-hidden="true">
+            <span class="rail-line"></span>
+          </div>
+
+          <!-- Stage 01: EGG -->
+          <div class="journey-step step-egg">
+            <div class="step-node">
+              <span class="node-num">01</span>
+              <span class="node-ping"></span>
+            </div>
+            <div class="step-card">
+              <div class="step-card-header">
+                <span class="step-tag">ORIGIN</span>
+                <span class="step-stage-name">EGG</span>
+              </div>
+              <div class="step-visual">
+                <div class="egg-stage-mini">
+                  <div class="egg-glow"></div>
+                  <div class="egg">◒</div>
+                </div>
+                <span class="egg-caption">DAY 01 // UNKNOWN</span>
+              </div>
+              <div class="step-info">
+                <p class="step-label">Starting Point</p>
+                <p class="step-micro">Everyone starts somewhere.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stage 02: HATCH -->
+          <div class="journey-step step-hatch">
+            <div class="step-node">
+              <span class="node-num">02</span>
+            </div>
+            <div class="step-card">
+              <div class="step-card-header">
+                <span class="step-tag">ENCOUNTER</span>
+                <span class="step-stage-name">HATCH</span>
+              </div>
+              <div class="step-visual">
+                <div class="radar-node">
+                  <div class="radar-grid"></div>
+                  <div class="radar-sweep"></div>
+                  <span class="radar-pip pip-1"></span>
+                  <span class="radar-pip pip-2"></span>
+                  <span class="radar-pip pip-3"></span>
+                </div>
+                <span class="visual-badge">SIGNALS DETECTED</span>
+              </div>
+              <div class="step-info">
+                <p class="step-label">First Encounters</p>
+                <p class="step-micro">The unfamiliar became familiar.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stage 03: PARTY -->
+          <div class="journey-step step-party is-highlight">
+            <div class="step-node is-highlight-node">
+              <span class="node-num">03</span>
+            </div>
+            <div class="step-card">
+              <div class="step-card-header">
+                <span class="step-tag tag-party">PARTY</span>
+                <span class="step-stage-name">PARTY</span>
+              </div>
+              <div class="step-visual">
+                <div class="party-roster-node">
+                  <div class="party-pips-grid">
+                    <span></span><span></span><span></span><span></span>
+                    <span></span><span></span><span></span><span></span>
+                    <span></span><span></span><span></span>
+                  </div>
+                  <span class="party-roster-count">11 TRAINERS ASSEMBLED</span>
+                </div>
+                <span class="visual-badge badge-red">PARTY ACTIVE</span>
+              </div>
+              <div class="step-info">
+                <p class="step-label">Found Our People</p>
+                <p class="step-micro">Different stories, same party.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stage 04: GO -->
+          <div class="journey-step step-go is-active">
+            <div class="step-node is-go-node">
+              <span class="node-num">04</span>
+            </div>
+            <div class="step-card">
+              <div class="step-card-header">
+                <span class="step-tag tag-go">FORWARD</span>
+                <span class="step-stage-name">GO</span>
+              </div>
+              <div class="step-visual">
+                <div class="waypoint-node">
+                  <span class="waypoint-pulse"></span>
+                  <span class="waypoint-chevron">►►►</span>
+                </div>
+                <span class="visual-badge">WAYPOINT UNLOCKED</span>
+              </div>
+              <div class="step-info">
+                <p class="step-label">Next Chapter</p>
+                <p class="step-micro">We don't know what's next. But we're going together.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Climax Statement & Ending Payoff -->
+        <div class="journey-footer">
+          <!-- Main Statement Highlight -->
+          <div class="journey-statement-card">
+            <div class="corner-bracket cb-tl"></div>
+            <div class="corner-bracket cb-tr"></div>
+            <div class="corner-bracket cb-bl"></div>
+            <div class="corner-bracket cb-br"></div>
+            <div class="statement-tag">
+              <span class="statement-dot"></span>
+              <span>CORE MESSAGE // ARCHIVE DIRECTIVE</span>
+            </div>
+            <h3 class="statement-text">
+              <span>DIFFERENT BUILDS.</span>
+              <span>DIFFERENT STORIES.</span>
+              <span class="accent-text">SAME PARTY.</span>
+            </h3>
+          </div>
+
+          <!-- Ending Payoff / Transition -->
+          <div class="journey-payoff-card">
+            <div class="payoff-badge">SO~</div>
+            <div class="payoff-cta">
+              READY. SET. <span>GO.</span>
+            </div>
+          </div>
+
+          <!-- Transition to Next Section -->
+          <div class="payoff-sub">
+            <span>NEXT: THE ONE BEHIND THE JOURNEY</span>
+            <span class="payoff-arrow">↓</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── 3. THE CENTER — antara About & Discover ── -->
+    <section class="center-section">
+      <div class="center-shade"></div>
+      <!-- Foto orang dengan background transparan (PNG) -->
+      <!-- Taruh file PNG di: assets/center/person.png atau assets/images/center-person.png -->
+      <div class="center-person-wrap">
+        <div class="center-person-frame">
+          <!-- Asymmetric Corner Brackets -->
+          <div class="cpf-bracket cpf-b-tl" aria-hidden="true"></div>
+          <div class="cpf-bracket cpf-b-tr" aria-hidden="true"></div>
+          <div class="cpf-bracket cpf-b-bl" aria-hidden="true"></div>
+
+          <!-- Technical Header -->
+          <div class="cpf-header">
+            <div class="cpf-tag">
+              <span class="cpf-led" aria-hidden="true"></span>
+              <span>CHARACTER // 01</span>
+            </div>
+            <span class="cpf-sys">SYS DISPLAY</span>
+          </div>
+
+          <!-- Character Viewport (Clipping Container) -->
+          <div class="cpf-viewport">
+            <!-- Technical Grid & Micro Markings -->
+            <div class="cpf-grid" aria-hidden="true"></div>
+            <div class="cpf-crosshair" aria-hidden="true"></div>
+            <div class="cpf-ticks" aria-hidden="true">
+              <span></span><span></span><span></span><span></span><span></span>
+            </div>
+
+            <!-- Character Image (Transparent PNG) -->
+            <img id="centerPersonPhoto" src="assets/center/center-person.png" alt="The Center Character"
+              class="center-person-img"
+              onerror="if(!this.dataset.tried){this.dataset.tried='1';this.src='assets/images/center-person.png';}else{this.style.display='none';}">
+          </div>
+
+          <!-- Technical Footer -->
+          <div class="cpf-footer">
+            <span class="cpf-id">ID // 00-CENTER</span>
+            <span class="cpf-status">READY.EXE</span>
+          </div>
+
+          <!-- Asymmetric Stepped Notch -->
+          <div class="cpf-notch" aria-hidden="true">
+            <span class="cpf-notch-line"></span>
+            <span class="cpf-notch-label">SEC // MASTER</span>
+          </div>
+        </div>
+      </div>
+      <div class="center-copy">
+        <p class="eyebrow">THE ONE BEHIND THE JOURNEY</p>
+        <h2>THE<br><span>CENTER.</span></h2>
+        <p>Di balik sebelas trainer, ada satu sosok yang menjadi tempat kami kembali. Tempat bertanya, meminta bantuan,
+          dan mencari arah.</p>
+        <div class="center-name">FAIZAH NAYDA SHALIHAH</div>
+      </div>
+      <div class="center-stamp">PROXY GO<br>FIELD GUIDE</div>
+    </section>
+
+    <!-- ── 4. DISCOVER — pokeball → kartu keluar inline ── -->
+    <section id="discover" class="discover">
+      <div class="discover-bg-word">DISCOVER</div>
+
+      <!-- Teks di kiri (berubah setelah pokeball terbuka) -->
+      <div class="discover-copy" id="discoverCopy">
+        <p class="eyebrow" id="discoverEyebrow">02 // OPEN THE ARCHIVE</p>
+        <h2 id="discoverTitle">WHO'S<br><span>INSIDE?</span></h2>
+        <p id="discoverSub">Tekan Pokéball untuk membuka perjalanan sebelas trainer Proxy Go.</p>
+      </div>
+
+      <!-- Pokeball — akan hilang setelah kartu keluar semua -->
+      <button id="pokeball" class="pokeball" aria-label="Open trainer archive">
+        <div class="ball-top"></div>
+        <div class="ball-bottom"></div>
+        <div class="ball-band"></div>
+        <div class="ball-button"></div>
+        <div class="energy e1"></div>
+        <div class="energy e2"></div>
+        <div class="energy e3"></div>
+        <span class="ambient-particle ap1" aria-hidden="true"></span>
+        <span class="ambient-particle ap2" aria-hidden="true"></span>
+        <span class="ambient-particle ap3" aria-hidden="true"></span>
+        <span class="ambient-particle ap4" aria-hidden="true"></span>
+        <span class="ambient-particle ap5" aria-hidden="true"></span>
+        <span class="ambient-particle ap6" aria-hidden="true"></span>
+      </button>
+      <p class="click-hint" id="clickHint">CLICK TO OPEN <span>↗</span></p>
+
+      <!-- Lineup kartu — muncul setelah pokeball hilang -->
+      <div id="teamLineup" class="team-lineup">
+        <div class="lineup-head">
+          <p class="eyebrow">03 // TRAINER ARCHIVE</p>
+          <h2>MEET THE<br><span>PARTY.</span></h2>
+          <p class="lineup-sub">11 PEOPLE / 11 STORIES / 1 PROXY</p>
+        </div>
+        <div id="teamLineupGrid" class="lineup-grid"></div>
+        <button id="closeArchive" class="close-archive" type="button" aria-label="Close archive and return to Pokeball">
+          <span class="reset-arrow">←</span>
+          <span>CLOSE ARCHIVE</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- ── 5. MEMORIES ── -->
+    <section id="memories" class="memories section">
+      <div class="section-head">
+        <span class="index">04</span>
+        <div>
+          <p class="eyebrow">FIELD NOTES</p>
+          <h2>WE WERE<br><span>HERE.</span></h2>
+        </div>
+      </div>
+      <p class="memory-intro">Bukan semua momen harus dijelaskan. Beberapa cukup disimpan.</p>
+      <div class="memory-strip left" id="memoryLeft"></div>
+      <div class="memory-strip right" id="memoryRight"></div>
+      <div class="memory-caption">PEKAN ILKOMERZ / 2026 / PROXY GO</div>
+    </section>
+
+    <!-- ── 6. CLOSING ── -->
+    <section class="closing">
+      <div class="closing-orb"></div>
+      <div class="closing-inner">
+        <p class="eyebrow">END OF TRANSMISSION</p>
+        <h2>QUEST<br><span>COMPLETE</span></h2>
+        <p class="closing-text">Mungkin setelah ini kami akan berjalan ke arah masing-masing.<br>Tapi cerita ini pernah
+          terjadi. Dan kami pernah menjadi satu.</p>
+        <div class="jargon">
+          <span>GO DATANG</span><span>GO MENANG</span><span>GO KEREN</span><span>HURAAAAA!</span>
+        </div>
+        <div class="bhap">BHAPPP</div>
+        <div class="contact">
+          <span>STILL IN CONTACT</span>
+          <a href="#">@PROXYGO</a>
+          <a href="mailto:email@example.com">email@example.com</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-track"><span>PROXY GO</span><span>PROXY GO</span><span>PROXY GO</span><span>PROXY GO</span></div>
+    <div class="footer-bottom"><span>PEKAN ILKOMERZ</span><span>© 2026</span><span>GO DATANG / GO MENANG / GO KEREN /
+        HURAAAA!</span></div>
+  </footer>
+
+  <!-- ========== PROFILE MODAL ========== -->
+  <div id="profileModal" class="modal" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+    <div class="modal-card">
+      <button id="closeModal" class="close">×</button>
+      <div class="modal-top">
+        <div class="modal-photo" id="modalPhoto"></div>
+        <div>
+          <p class="eyebrow">TRAINER PROFILE</p>
+          <h2 id="modalName">NAMA</h2>
+          <p id="modalPokemon">POKÉMON TYPE</p>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div><span>DATE OF BIRTH</span><b id="modalBirth">DD / MM / YYYY</b></div>
+        <div><span>ORIGIN</span><b id="modalOrigin">KOTA</b></div>
+        <div><span>INSTAGRAM</span><b><a id="modalSocial" href="#" target="_blank"
+              rel="noopener noreferrer">@USERNAME</a></b></div>
+      </div>
+      <div class="modal-social">
+        <a id="modalLinkedin" href="#" target="_blank" rel="noopener" class="social-btn social-li">
+          <span class="social-icon">IN</span>LINKEDIN
+        </a>
+        <a id="modalGithub" href="#" target="_blank" rel="noopener" class="social-btn social-gh">
+          <span class="social-icon">GH</span>GITHUB
+        </a>
+        <a id="modalCv" href="#" target="_blank" rel="noopener" class="social-btn social-cv">
+          <span class="social-icon">CV</span>OPEN CV ATS ↗
+        </a>
       </div>
     </div>
   </div>
-</section>
 
-<!-- ── 3. THE CENTER — antara About & Discover ── -->
-<section class="center-section">
-  <div class="center-shade"></div>
-  <!-- Foto orang dengan background transparan (PNG) -->
-  <!-- Taruh file PNG di: assets/center/person.png -->
-  <div class="center-person-wrap">
-    <img id="centerPersonPhoto"
-         src="assets/center/person.png"
-         alt="The Center"
-         class="center-person-img"
-         onerror="this.style.display='none'">
-  </div>
-  <div class="center-copy">
-    <p class="eyebrow">THE ONE BEHIND THE JOURNEY</p>
-    <h2>THE<br><span>CENTER.</span></h2>
-    <p>Di balik sebelas trainer, ada satu sosok yang menjadi tempat kami kembali. Tempat bertanya, meminta bantuan, dan mencari arah.</p>
-    <div class="center-name">Faizah Nayda Shalihah</div>
-  </div>
-  <div class="center-stamp">PROXY GO<br>FIELD GUIDE</div>
-</section>
-
-<!-- ── 4. DISCOVER — pokeball → kartu keluar inline ── -->
-<section id="discover" class="discover">
-  <div class="discover-bg-word">DISCOVER</div>
-
-  <!-- Teks di kiri (berubah setelah pokeball terbuka) -->
-  <div class="discover-copy" id="discoverCopy">
-    <p class="eyebrow" id="discoverEyebrow">02 // OPEN THE ARCHIVE</p>
-    <h2 id="discoverTitle">WHO'S<br><span>INSIDE?</span></h2>
-    <p id="discoverSub">Tekan Pokéball untuk membuka perjalanan sebelas trainer Proxy Go.</p>
-  </div>
-
-  <!-- Pokeball — akan hilang setelah kartu keluar semua -->
-  <button id="pokeball" class="pokeball" aria-label="Open trainer archive">
-    <div class="ball-top"></div><div class="ball-bottom"></div><div class="ball-band"></div><div class="ball-button"></div>
-    <div class="energy e1"></div><div class="energy e2"></div><div class="energy e3"></div>
-  </button>
-  <p class="click-hint" id="clickHint">CLICK TO OPEN <span>↗</span></p>
-
-  <!-- Lineup kartu — muncul setelah pokeball hilang -->
-  <div id="teamLineup" class="team-lineup">
-    <div class="lineup-head">
-      <p class="eyebrow">03 // TRAINER ARCHIVE</p>
-      <h2>MEET THE<br><span>TEAM.</span></h2>
-      <p class="lineup-sub">11 PEOPLE / 11 STORIES / 1 PROXY</p>
-    </div>
-    <div id="teamLineupGrid" class="lineup-grid"></div>
-  </div>
-</section>
-
-<!-- ── 5. MEMORIES ── -->
-<section id="memories" class="memories section">
-  <div class="section-head">
-    <span class="index">04</span>
-    <div><p class="eyebrow">FIELD NOTES</p><h2>WE WERE<br><span>HERE.</span></h2></div>
-  </div>
-  <p class="memory-intro">Bukan semua momen harus dijelaskan. Beberapa cukup disimpan.</p>
-  <div class="memory-strip left" id="memoryLeft"></div>
-  <div class="memory-strip right" id="memoryRight"></div>
-  <div class="memory-caption">PEKAN ILKOMERZ / 2026 / PROXY GO</div>
-</section>
-
-<!-- ── 6. CLOSING ── -->
-<section class="closing">
-  <div class="closing-orb"></div>
-  <div class="closing-inner">
-    <p class="eyebrow">END OF TRANSMISSION</p>
-    <h2>PROXY<br><span>GO</span></h2>
-    <p class="closing-text">Mungkin setelah ini kami akan berjalan ke arah masing-masing.<br>Tapi cerita ini pernah terjadi. Dan kami pernah menjadi satu.</p>
-    <div class="jargon">
-      <span>GO DATANG</span><span>GO MENANG</span><span>GO KEREN</span><span>HURAAAAA!</span>
-    </div>
-    <div class="bhap">BHAPPP</div>
-    <div class="contact">
-      <span>STILL IN CONTACT</span>
-      <a href="#">@PROXYGO</a>
-      <a href="mailto:email@example.com">email@example.com</a>
-    </div>
-  </div>
-</section>
-
-</main>
-
-<footer>
-  <div class="footer-track"><span>PROXY GO</span><span>PROXY GO</span><span>PROXY GO</span><span>PROXY GO</span></div>
-  <div class="footer-bottom"><span>PEKAN ILKOMERZ</span><span>© 2026</span><span>GO DATANG / GO MENANG / GO KEREN / HURAAAA!</span></div>
-</footer>
-
-<!-- ========== PROFILE MODAL ========== -->
-<div id="profileModal" class="modal" aria-hidden="true">
-  <div class="modal-backdrop"></div>
-  <div class="modal-card">
-    <button id="closeModal" class="close">×</button>
-    <div class="modal-top">
-      <div class="modal-photo" id="modalPhoto"></div>
-      <div><p class="eyebrow">TRAINER PROFILE</p><h2 id="modalName">NAMA</h2><p id="modalPokemon">POKÉMON TYPE</p></div>
-    </div>
-    <div class="modal-body">
-      <div><span>DATE OF BIRTH</span><b id="modalBirth">DD / MM / YYYY</b></div>
-      <div><span>ORIGIN</span><b id="modalOrigin">KOTA</b></div>
-      <div><span>INSTAGRAM</span><b id="modalSocial">@USERNAME</b></div>
-    </div>
-    <div class="modal-social">
-      <a id="modalInstagram" href="#" target="_blank" rel="noopener" class="social-btn social-ig">
-        <span class="social-icon">IG</span>INSTAGRAM
-      </a>
-      <a id="modalLinkedin" href="#" target="_blank" rel="noopener" class="social-btn social-li">
-        <span class="social-icon">IN</span>LINKEDIN
-      </a>
-      <a id="modalGithub" href="#" target="_blank" rel="noopener" class="social-btn social-gh">
-        <span class="social-icon">GH</span>GITHUB
-      </a>
-      <a id="modalCv" href="#" target="_blank" rel="noopener" class="social-btn social-cv">
-        <span class="social-icon">CV</span>OPEN CV ATS ↗
-      </a>
-    </div>
-  </div>
-</div>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
