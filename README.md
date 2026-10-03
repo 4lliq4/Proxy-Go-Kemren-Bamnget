@@ -1,6 +1,6 @@
-# PROXY GO — Prototype
+# PROXY GO
 
-Prototype kasar untuk website perkenalan kelompok Pekan Ilkomerz.
+Website perkenalan kelompok Pekan Ilkomerz.
 
 ## Struktur
 - `index.html` — seluruh struktur/alur halaman
