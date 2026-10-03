@@ -10,7 +10,7 @@ const members = [
     birth:"DD / MM / YYYY", origin:"KOTA ASAL",
     photo:"assets/members/anggota1/foto.jpg",
     instagram:"#", linkedin:"#", github:"#",
-    cv:"assets/members/anggota1/cv.pdf"
+    cv:"assets/members/anggota1/CV Ats_Bimo Rajjaz Pahlevi.pdf"
   },
   {
     id:"02", name:"NAMA ANGGOTA 02", pokemon:"PIKACHU",
