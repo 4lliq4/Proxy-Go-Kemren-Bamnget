@@ -1,4 +1,24 @@
 // ============================================================
+// FOTO ARCHIVE HERO (3 foto paling atas)
+// Taruh foto di assets/hero/ dengan nama: hero1, hero2, hero3
+// (hero2 = foto tengah/besar). Format: jpg, jpeg, png, webp
+// ============================================================
+(function loadHeroPhotos() {
+  const exts = ["jpg", "jpeg", "png", "webp", "JPG", "JPEG", "PNG", "WEBP"];
+  document.querySelectorAll("img[data-hero]").forEach((img) => {
+    const base = "assets/hero/" + img.dataset.hero;
+    let i = 0;
+    const tryNext = () => {
+      if (i >= exts.length) { img.hidden = true; return; }
+      img.src = base + "." + exts[i++];
+    };
+    img.onload = () => { img.hidden = false; };
+    img.onerror = tryNext;
+    tryNext();
+  });
+})();
+
+// ============================================================
 // DATA ANGGOTA — Isi data masing-masing anggota di sini.
 // Foto  : letakkan di assets/members/anggotaN/foto.jpg
 // CV    : letakkan di assets/members/anggotaN/cv.pdf

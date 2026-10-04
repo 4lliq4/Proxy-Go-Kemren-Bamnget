@@ -1,0 +1,24 @@
+====================================================
+  CARA MENAMBAHKAN 3 FOTO ARCHIVE (PALING ATAS)
+====================================================
+
+1. LETAKKAN 3 foto di folder ini (assets/hero/) dengan nama:
+
+   hero1  -> foto KIRI   (miring kiri, kecil)
+   hero2  -> foto TENGAH (paling besar)
+   hero3  -> foto KANAN  (miring kanan, kecil)
+
+   Contoh: hero1.jpg, hero2.jpeg, hero3.png
+
+2. Format yang didukung: .jpg, .jpeg, .png, .webp
+   (ekstensinya bebas, website akan otomatis mencari)
+
+3. Refresh browser. Selesai! Tidak perlu edit kode.
+
+====================================================
+  CATATAN:
+====================================================
+- Kalau foto belum ada, slot tetap tampil "ARCHIVE PHOTO"
+- Di HP hanya foto tengah (hero2) yang tampil
+- Foto otomatis di-crop mengisi bingkai (object-fit: cover)
+====================================================
