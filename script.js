@@ -1,4 +1,4 @@
-// ============================================================
+﻿// ============================================================
 // FOTO ARCHIVE HERO (3 foto paling atas)
 // Taruh foto di assets/hero/ dengan nama: hero1, hero2, hero3
 // (hero2 = foto tengah/besar). Format: jpg, jpeg, png, webp
@@ -19,7 +19,7 @@
 })();
 
 // ============================================================
-// DATA ANGGOTA — Isi data masing-masing anggota di sini.
+// DATA ANGGOTA â€” Isi data masing-masing anggota di sini.
 // Foto  : letakkan di assets/members/anggotaN/foto.jpg
 // CV    : letakkan di assets/members/anggotaN/cv.pdf
 // Link  : isi URL lengkap, atau "#" jika belum ada
@@ -107,10 +107,10 @@ const members = [
 
 
 
-// ─── HELPER ─────────────────────────────────────────────────
+// â”€â”€â”€ HELPER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function hasLink(url) { return url && url !== "#"; }
 
-// ─── BANGUN KARTU DI LINEUP GRID ─────────────────────────────
+// â”€â”€â”€ BANGUN KARTU DI LINEUP GRID â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const lineupGrid = document.getElementById("teamLineupGrid");
 
 members.forEach((m, i) => {
@@ -138,13 +138,13 @@ members.forEach((m, i) => {
   img.onerror = () => { bg.style.backgroundImage = "linear-gradient(135deg,#1f2d3d,#6c7480)"; };
   img.src = m.photo;
 
-  // Klik card → buka profile modal detail
+  // Klik card â†’ buka profile modal detail
   card.addEventListener("click", () => openProfile(i));
 
   lineupGrid.appendChild(card);
 });
 
-// ─── POKÉBALL ARCHIVE INTERACTION (2-STATE DISCOVER) ────────
+// â”€â”€â”€ POKÃ‰BALL ARCHIVE INTERACTION (2-STATE DISCOVER) â”€â”€â”€â”€â”€â”€â”€â”€
 const discoverSection = document.getElementById("discover");
 const discoverBall = document.getElementById("pokeball");
 const clickHint = document.getElementById("clickHint");
@@ -160,7 +160,7 @@ function handlePokeballClick() {
   if (archiveState !== "initial") return;
   archiveState = "opening";
 
-  // Catat titik tengah Pokéball relatif terhadap section #discover
+  // Catat titik tengah PokÃ©ball relatif terhadap section #discover
   const ballRect = discoverBall.getBoundingClientRect();
   const sectionRect = discoverSection.getBoundingClientRect();
   ballCX = ballRect.left + ballRect.width / 2 - sectionRect.left;
@@ -179,7 +179,7 @@ function handlePokeballClick() {
   // Masuk ke fase opening (fade out teks & hint)
   discoverSection.classList.add("is-opening");
 
-  // Fase 1: Pokéball bergetar cepat & kuat (poke-shake)
+  // Fase 1: PokÃ©ball bergetar cepat & kuat (poke-shake)
   discoverBall.classList.add("poke-shake");
 
   function onShakeEnd(e) {
@@ -187,7 +187,7 @@ function handlePokeballClick() {
     discoverBall.removeEventListener("animationend", onShakeEnd);
     discoverBall.classList.remove("poke-shake");
 
-    // Fase 2: Pokéball membuka (poke-open)
+    // Fase 2: PokÃ©ball membuka (poke-open)
     startBallOpening();
   }
   discoverBall.addEventListener("animationend", onShakeEnd);
@@ -208,14 +208,14 @@ function startBallOpening() {
     if (e.animationName !== "ballTopOpen") return;
     ballTop.removeEventListener("animationend", onOpenEnd);
 
-    // Fase 3: Pokéball selesai membuka → ganti state ke Meet the Team
+    // Fase 3: PokÃ©ball selesai membuka â†’ ganti state ke Meet the Team
     onOpeningComplete();
   }
   ballTop.addEventListener("animationend", onOpenEnd);
 }
 
 function onOpeningComplete() {
-  // Transisi State: WHO'S INSIDE? → MEET THE TEAM
+  // Transisi State: WHO'S INSIDE? â†’ MEET THE TEAM
   discoverSection.classList.remove("is-opening");
   discoverSection.classList.add("is-team");
 
@@ -242,7 +242,7 @@ function revealMemberCards() {
     card.style.setProperty("--from-x", `${fromX}px`);
     card.style.setProperty("--from-y", `${fromY}px`);
 
-    // Stagger kemunculan kartu satu per satu dari posisi Pokéball
+    // Stagger kemunculan kartu satu per satu dari posisi PokÃ©ball
     setTimeout(() => {
       card.style.opacity = "1";
       card.classList.add("card-revealed");
@@ -255,7 +255,7 @@ function revealMemberCards() {
   }, totalCardTime);
 }
 
-// ─── POKÉBALL VISUAL RESET HELPER ───────────────────────────
+// â”€â”€â”€ POKÃ‰BALL VISUAL RESET HELPER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function resetPokeballVisual() {
   discoverBall.classList.remove("poke-open", "poke-shake", "poke-reveal");
 
@@ -286,7 +286,7 @@ function resetPokeballVisual() {
   });
 }
 
-// ─── CLOSE / RESET → KEMBALI KE WHO'S INSIDE? ───────────────
+// â”€â”€â”€ CLOSE / RESET â†’ KEMBALI KE WHO'S INSIDE? â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function closeArchive() {
   if (archiveState !== "team") return;
   archiveState = "closing";
@@ -294,7 +294,7 @@ function closeArchive() {
   // 1. Stop any active animation
   discoverBall.classList.remove("poke-open", "poke-shake", "poke-reveal");
 
-  // 2. Reset Pokéball internals to CLOSED state immediately
+  // 2. Reset PokÃ©ball internals to CLOSED state immediately
   resetPokeballVisual();
 
   // 3. Reset team cards
@@ -326,7 +326,7 @@ function closeArchive() {
     clickHint.style.transform = "";
   }
 
-  // 6. Restore Pokéball
+  // 6. Restore PokÃ©ball
   discoverBall.style.display = "";
   discoverBall.style.pointerEvents = "";
   discoverBall.style.cursor = "";
@@ -340,7 +340,7 @@ function closeArchive() {
     return;
   }
 
-  // 8. Reveal the CLOSED Pokéball
+  // 8. Reveal the CLOSED PokÃ©ball
   void discoverBall.offsetWidth;
   discoverBall.classList.add("poke-reveal");
 
@@ -369,7 +369,7 @@ document.querySelectorAll(".close-archive, #resetPokeball, #closeArchive").forEa
   btn.addEventListener("click", closeArchive);
 });
 
-// ─── PROFILE MODAL ──────────────────────────────────────────
+// â”€â”€â”€ PROFILE MODAL â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 const profileModal = document.getElementById("profileModal");
 
@@ -402,7 +402,7 @@ function openProfile(i) {
   // Teks
   document.getElementById("modalName").textContent = m.name;
   document.getElementById("modalPokemon").textContent = m.pokemon;
-  document.getElementById("modalBirth").textContent = m.birth || m.dob || "—";
+  document.getElementById("modalBirth").textContent = m.birth || m.dob || "â€”";
   document.getElementById("modalOrigin").textContent = m.origin;
 
   // Instagram username sebagai clickable link di member info
@@ -418,7 +418,7 @@ function openProfile(i) {
       igEl.style.opacity = "1";
       igEl.style.cursor = "pointer";
     } else {
-      igEl.textContent = "—";
+      igEl.textContent = "â€”";
       igEl.removeAttribute("href");
       igEl.style.pointerEvents = "none";
       igEl.style.opacity = "0.45";
@@ -456,10 +456,10 @@ document.addEventListener("keydown", e => {
   if (e.key === "Escape") closeProfileModal();
 });
 
-// ─── MEMORIES ───────────────────────────────────────────────
+// â”€â”€â”€ MEMORIES â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 // ============================================================
-// MEMORIES — Tambahkan nama file foto kamu di sini.
+// MEMORIES â€” Tambahkan nama file foto kamu di sini.
 // Letakkan foto di folder: assets/memories/
 // Contoh: "foto1.jpg", "momen-wisuda.png", dsb.
 // ============================================================
@@ -527,7 +527,59 @@ if (memoriesPhotos.length === 0) {
   buildMemoryStrip(memRight, right);
 }
 
-// ─── LOADER ─────────────────────────────────────────────────
+// â”€â”€â”€ LOADER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 window.addEventListener("load", () => {
   setTimeout(() => document.getElementById("loader").classList.add("hide"), 2100);
 });
+
+// ============================================================
+// BACKGROUND MUSIC â€” taruh lagu di assets/music/bgm.mp3
+// Browser memblokir autoplay bersuara, jadi musik mulai saat
+// pengunjung pertama kali klik / tap / tekan tombol.
+// ============================================================
+(function setupBgm() {
+  const audio = document.getElementById("bgm");
+  const btn = document.getElementById("bgmToggle");
+  if (!audio || !btn) return;
+
+  const VOLUME = 0.4; // atur volume 0.0 - 1.0
+  audio.volume = VOLUME;
+  let wantsMusic = localStorage.getItem("bgmMuted") !== "1";
+
+  const render = (playing) => {
+    btn.classList.toggle("is-muted", !playing);
+    btn.setAttribute("aria-pressed", String(playing));
+    btn.setAttribute("aria-label", playing ? "Matikan musik" : "Putar musik");
+    btn.querySelector(".bgm-label").textContent = playing ? "BGM ON" : "BGM OFF";
+  };
+
+  const play = () => audio.play().then(() => render(true)).catch(() => render(false));
+  const pause = () => { audio.pause(); render(false); };
+
+  // Sembunyikan tombol kalau file musik tidak ditemukan
+  audio.addEventListener("error", () => btn.classList.add("is-missing"));
+
+  btn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    wantsMusic = audio.paused;
+    localStorage.setItem("bgmMuted", wantsMusic ? "0" : "1");
+    wantsMusic ? play() : pause();
+  });
+
+  // Coba autoplay; kalau diblokir, mulai di interaksi pertama
+  if (wantsMusic) play();
+  const startOnInteract = (e) => {
+    if (btn.contains(e.target)) return; // biar klik tombol tidak dobel
+    if (wantsMusic && audio.paused) play();
+    ["pointerdown", "keydown", "touchstart"].forEach((ev) =>
+      document.removeEventListener(ev, startOnInteract));
+  };
+  ["pointerdown", "keydown", "touchstart"].forEach((ev) =>
+    document.addEventListener(ev, startOnInteract, { passive: true }));
+
+  // Jeda saat tab disembunyikan, lanjut saat kembali
+  document.addEventListener("visibilitychange", () => {
+    if (document.hidden) audio.pause();
+    else if (wantsMusic) play();
+  });
+})();

@@ -1,0 +1,20 @@
+﻿====================================================
+  CARA MENAMBAHKAN BACKGROUND MUSIC
+====================================================
+
+1. LETAKKAN file lagu di folder ini (assets/music/)
+   dengan nama:  bgm.mp3
+
+2. Refresh browser. Selesai!
+
+====================================================
+  CATATAN:
+====================================================
+- Browser tidak mengizinkan musik bunyi otomatis, jadi
+  musik mulai saat pengunjung pertama kali klik/tap.
+- Tombol BGM ada di pojok kanan bawah (selalu tampil).
+- Pilihan mute diingat browser saat halaman dibuka lagi.
+- Kalau bgm.mp3 belum ada, tombol otomatis disembunyikan.
+- Atur volume di script.js -> const VOLUME = 0.4;
+- Usahakan ukuran file kecil (< 5MB), 128kbps sudah cukup.
+====================================================

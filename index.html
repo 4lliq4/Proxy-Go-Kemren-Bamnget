@@ -428,6 +428,25 @@
     </div>
   </div>
 
+  <!-- ========== BACKGROUND MUSIC ========== -->
+  <!-- Taruh lagu di assets/music/bgm.mp3 -->
+  <audio id="bgm" src="assets/music/bgm.mp3" loop preload="auto"></audio>
+  <button id="bgmToggle" class="bgm-toggle is-muted" type="button" aria-label="Putar musik" aria-pressed="false">
+    <span class="bgm-icon" aria-hidden="true">
+      <span class="bgm-ring"></span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path class="bgm-speaker" d="M4 9h3l5-4v14l-5-4H4z" fill="currentColor"/>
+        <path class="bgm-wave w1" d="M15.5 9.5a3.5 3.5 0 0 1 0 5"/>
+        <path class="bgm-wave w2" d="M18 7a7 7 0 0 1 0 10"/>
+        <path class="bgm-x" d="M16 9.5l5 5M21 9.5l-5 5"/>
+      </svg>
+    </span>
+    <span class="bgm-text">
+      <span class="bgm-label">BGM OFF</span>
+      <span class="bgm-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+    </span>
+  </button>
+
   <script src="script.js"></script>
 </body>
 

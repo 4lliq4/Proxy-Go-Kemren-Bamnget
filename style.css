@@ -29,8 +29,53 @@ footer{background:rgba(6,9,14,.92);overflow:hidden;position:relative}footer:befo
 @media(orientation:landscape) and (max-height:500px){.hero{min-height:auto;padding:70px 20px 30px}.hero-collage{margin:5px auto 15px}.hero-photo-slot.slot-main{height:220px;width:180px}.discover{min-height:auto;padding:70px 20px 30px}.pokeball{width:130px;margin:10px auto}.modal-card{max-height:85vh;max-height:85svh}.closing{min-height:auto;padding:60px 20px}}
 @media(prefers-reduced-motion:reduce){.pokeball{animation:none!important;transition:none!important;filter:drop-shadow(0 0 25px rgba(229,57,53,.18)) drop-shadow(0 0 60px rgba(229,57,53,.08))!important}.pokeball.poke-shake{animation:none!important}.pokeball.poke-open .ball-top,.pokeball.poke-open .ball-bottom{animation-duration:.01ms!important}.poke-flash{animation-duration:.01ms!important}.team-card.card-revealed{animation:none!important;opacity:1!important}.energy,.ambient-particle{animation:none!important;display:none!important}.hero-scroll-arrow{animation:none!important}.hero-photo-slot{transition:none!important}.hero-photo-slot:hover{transform:none!important}.center-person-frame{animation:none!important;transition:none!important}}
 
-/* ── HERO PHOTO SHARPNESS FIX ── */
+/* == HERO PHOTO SHARPNESS FIX == */
 .hero-photo-slot{backface-visibility:hidden;-webkit-backface-visibility:hidden;transform-style:flat}
 .hero-photo img{filter:none!important;image-rendering:-webkit-optimize-contrast;image-rendering:high-quality;backface-visibility:hidden;-webkit-backface-visibility:hidden;transform:translateZ(0)}
 .hero-photo-slot:hover .hero-photo img{filter:none!important}
 @media(min-width:901px){.hero-photo-slot.slot-main:hover{transform:rotate(0deg) translateY(-10px)}}
+
+/* == BACKGROUND MUSIC TOGGLE == */
+.bgm-toggle{position:fixed;right:clamp(14px,2.5vw,28px);bottom:clamp(14px,2.5vw,28px);z-index:950;display:inline-flex;align-items:center;gap:12px;padding:6px 16px 6px 6px;background:linear-gradient(135deg,rgba(20,28,42,.94),rgba(10,14,22,.94));backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid rgba(229,57,53,.45);border-radius:999px;color:var(--white);font-family:"Press Start 2P",monospace;cursor:pointer;box-shadow:0 10px 30px rgba(0,0,0,.55),0 0 22px rgba(229,57,53,.18);transition:transform .25s cubic-bezier(.2,.8,.2,1),border-color .25s,box-shadow .25s}
+.bgm-toggle:hover{transform:translateY(-3px);border-color:var(--red2);box-shadow:0 14px 34px rgba(0,0,0,.6),0 0 30px rgba(229,57,53,.35)}
+.bgm-toggle:active{transform:translateY(0) scale(.96)}
+.bgm-toggle:focus-visible{outline:2px solid var(--red2);outline-offset:4px}
+.bgm-toggle.is-missing{display:none}
+
+/* Icon badge - pokeball style */
+.bgm-icon{position:relative;flex:0 0 auto;width:40px;height:40px;border-radius:50%;display:grid;place-items:center;color:#fff;background:linear-gradient(180deg,var(--red) 0 50%,#f2f3f5 50% 100%);box-shadow:inset 0 0 0 2px #070a10,0 0 0 2px rgba(229,57,53,.5)}
+.bgm-icon:before{content:"";position:absolute;left:0;right:0;top:50%;height:2px;margin-top:-1px;background:#070a10}
+.bgm-icon svg{position:relative;z-index:2;width:18px;height:18px;padding:3px;box-sizing:content-box;border-radius:50%;background:#070a10;border:2px solid #f2f3f5}
+.bgm-ring{position:absolute;inset:-4px;border-radius:50%;border:2px solid var(--red);opacity:0;pointer-events:none}
+.bgm-wave,.bgm-x{transition:opacity .25s ease,transform .25s ease;transform-box:view-box;transform-origin:15px 12px}
+.bgm-x{opacity:0}
+
+/* Text + equalizer */
+.bgm-text{display:flex;flex-direction:column;align-items:flex-start;gap:6px}
+.bgm-label{font-size:8px;letter-spacing:1.5px;line-height:1}
+.bgm-bars{display:inline-flex;align-items:flex-end;gap:2px;height:10px}
+.bgm-bars i{display:block;width:3px;height:100%;border-radius:1px;background:var(--red2);transform-origin:bottom;animation:bgmBar .9s ease-in-out infinite}
+.bgm-bars i:nth-child(2){animation-delay:-.45s}
+.bgm-bars i:nth-child(3){animation-delay:-.2s}
+.bgm-bars i:nth-child(4){animation-delay:-.7s}
+.bgm-bars i:nth-child(5){animation-delay:-.35s}
+
+/* Playing */
+.bgm-toggle:not(.is-muted) .bgm-ring{animation:bgmPulse 1.8s ease-out infinite}
+.bgm-toggle:not(.is-muted) .bgm-wave.w1{animation:bgmWave 1.2s ease-in-out infinite}
+.bgm-toggle:not(.is-muted) .bgm-wave.w2{animation:bgmWave 1.2s ease-in-out infinite .2s}
+
+/* Muted */
+.bgm-toggle.is-muted{border-color:var(--line);box-shadow:0 10px 30px rgba(0,0,0,.55)}
+.bgm-toggle.is-muted .bgm-icon{filter:grayscale(1) brightness(.75)}
+.bgm-toggle.is-muted .bgm-wave{opacity:0;transform:scale(.6)}
+.bgm-toggle.is-muted .bgm-x{opacity:1}
+.bgm-toggle.is-muted .bgm-label{color:var(--muted)}
+.bgm-toggle.is-muted .bgm-bars i{animation:none;transform:scaleY(.2);background:var(--muted)}
+
+@keyframes bgmBar{0%,100%{transform:scaleY(.25)}50%{transform:scaleY(1)}}
+@keyframes bgmPulse{0%{transform:scale(1);opacity:.8}100%{transform:scale(1.55);opacity:0}}
+@keyframes bgmWave{0%,100%{opacity:1}50%{opacity:.35}}
+
+@media(max-width:600px){.bgm-toggle{padding:5px}.bgm-text{display:none}.bgm-icon{width:44px;height:44px}}
+@media(prefers-reduced-motion:reduce){.bgm-bars i,.bgm-ring,.bgm-wave{animation:none!important}.bgm-bars i{transform:scaleY(.7)}}
