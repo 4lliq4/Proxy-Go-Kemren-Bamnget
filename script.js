@@ -84,7 +84,7 @@ const members = [
   {
     id: "09", name: "RABANI", pokemon: "VAPOREON",
     birth: "27 August 2006", origin: "JAKARTA",
-    photo: "assets/members/anggota9/foto9.jpg",
+    photo: "assets/members/anggota9/foto9.JPG",
     instagram: "mrbani.w", linkedin: "https://www.linkedin.com/in/muhammad-rabani-wicaksono-5b8044421/", github: "#",
     cv: "assets/members/anggota9/CV_Muhammad Rabani Wicaksono.pdf"
   },
